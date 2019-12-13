@@ -15,18 +15,18 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-import f5_sphinx_theme
+
 
 # -- Project information -----------------------------------------------------
 
 project = u'Agility2020-AS3'
-copyright = u'2020, David Larsen'
-author = u'AS3'
+copyright = u'2020'
+author = u'F5 Engineers'
 
 # The short X.Y version
 version = u''
 # The full version, including alpha/beta/rc tags
-release = u'.01'
+release = u''
 
 
 # -- General configuration ---------------------------------------------------
@@ -69,107 +69,39 @@ exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store']
 pygments_style = 'sphinx'
 
 
-
-
-# -- Options for HTML output ----------------------------------------------
+# -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'f5_sphinx_theme'
+#
+html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {
-    'next_prev_link': True
-}
-
-# Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = f5_sphinx_theme.get_html_theme_path()
-
-# The name for this set of Sphinx documents.  If None, it defaults to
-# "<project> v<release> documentation".
-html_title = "Application Deployments with BIG-IP and Application Services (AS3)"
-
-# A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = "Deployment with AS3"
-
-# The name of an image file (relative to this directory) to place at the top
-# of the sidebar.
-#html_logo = '_static/f5-logo-solid-rgb_small.png'
-
-# The name of an image file (within the static path) to use as favicon of the
-# docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
-# pixels large.
-# html_favicon = None
+#
+# html_theme_options = {}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-# Add any extra paths that contain custom files (such as robots.txt or
-# .htaccess) here, relative to this directory. These files are copied
-# directly to the root of the documentation.
-# html_extra_path = []
+# Custom sidebar templates, must be a dictionary that maps document names
+# to template names.
+#
+# The default sidebars (for documents that don't match any pattern) are
+# defined by theme itself.  Builtin themes are using these templates by
+# default: ``['localtoc.html', 'relations.html', 'sourcelink.html',
+# 'searchbox.html']``.
+#
+# html_sidebars = {}
 
-# If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
-# using the given strftime format.
-# html_last_updated_fmt = '%b %d, %Y'
 
-# If true, SmartyPants will be used to convert quotes and dashes to
-# typographically correct entities.
-# html_use_smartypants = True
-
-# Custom sidebar templates, maps document names to template names.
-html_sidebars = {'**': ['searchbox.html', 'localtoc.html', 'globaltoc.html']}
-
-# Additional templates that should be rendered to pages, maps page names to
-# template names.
-# html_additional_pages = {}
-
-# If false, no module index is generated.
-# html_domain_indices = True
-
-# If false, no index is generated.
-# html_use_index = True
-
-# If true, the index is split into individual pages for each letter.
-# html_split_index = False
-
-# If true, links to the reST sources are added to the pages.
-# html_show_sourcelink = True
-
-# If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
-# html_show_sphinx = True
-
-# If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
-# html_show_copyright = True
-
-# If true, an OpenSearch description file will be output, and all pages will
-# contain a <link> tag referring to it.  The value of this option must be the
-# base URL from which the finished HTML is served.
-# html_use_opensearch = ''
-
-# This is the file name suffix for HTML files (e.g. ".xhtml").
-# html_file_suffix = None
-
-# Language to be used for generating the HTML full-text search index.
-# Sphinx supports the following languages:
-#   'da', 'de', 'en', 'es', 'fi', 'fr', 'hu', 'it', 'ja'
-#   'nl', 'no', 'pt', 'ro', 'ru', 'sv', 'tr'
-# html_search_language = 'en'
-
-# A dictionary with options for the search language support, empty by default.
-# Now only 'ja' uses this config value
-# html_search_options = {'type': 'default'}
-
-# The name of a javascript file (relative to the configuration directory) that
-# implements a search results scorer. If empty, the default will be used.
-# html_search_scorer = 'scorer.js'
+# -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-
+htmlhelp_basename = 'vsCodeRemoteLabGuidedoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -196,8 +128,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'AS3.tex', u'Agility2020-AS3 Documentation',
-     u'David Larsen', 'manual'),
+    (master_doc, 'vsCodeRemoteLabGuidedoc.tex', u'VS Code Remote Lab Guide Documentation',
+    u'Author Name', 'manual'),
 ]
 
 
@@ -206,41 +138,23 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'agility2020-AS3', u'Agility2020-AS3 Documentation',
-     [author], 1)
+    (master_doc, 'vsCodeRemoteLabGuidedoc', u'VS Code Remote Lab Guide Documentation',
+    [author], 1)
 ]
 
-# -- Options for Texinfo output -------------------------------------------
+
+# -- Options for Texinfo output ----------------------------------------------
 
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'F5Ansible', u'F5 Modules for Ansible',
-     author, 'F5Ansible', 'One line description of project.',
-     'Miscellaneous'),
+    (master_doc, 'vsCodeRemoteLabGuidedoc', u'VS Code Remote Lab Guide Documentation',
+    author, 'vsCodeRemoteLabGuidedoc', 'Using VS Code Remote',
+    'Miscellaneous'),
 ]
 
-# Documents to append as an appendix to all manuals.
-# texinfo_appendices = []
-
-# If false, no module index is generated.
-# texinfo_domain_indices = True
-
-# How to display URL addresses: 'footnote', 'no', or 'inline'.
-# texinfo_show_urls = 'footnote'
-
-# If true, do not generate a @detailmenu in the "Top" node's menu.
-# texinfo_no_detailmenu = False
-
-
-# Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {
-    'requests': ('http://docs.python-requests.org/en/latest/', None)
-}
-
-linkcheck_ignore = [
-    r'.*L157_.*',
-    r'.*diff-.*',
-    r'.*wednesdays.*',
-]
+import f5_sphinx_theme
+html_theme = 'f5_sphinx_theme'
+html_theme_path = f5_sphinx_theme.get_html_theme_path()
+html_sidebars = {'**': ['searchbox.html', 'localtoc.html', 'globaltoc.html']}
