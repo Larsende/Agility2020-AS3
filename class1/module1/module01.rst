@@ -1,49 +1,33 @@
 Getting Started
 
-Lab Setup
-
-.. list-table::
-    :widths: 20 40
-    :header-rows: 1
-    :stub-columns: 1
-
-    * - **System Type**
-      - **Description**
-
-    * - BIG-IP01
-      - BIG-IP in HA configuration
-    * - BIG-IP02
-      - BIG-IP in HA configuration
-    * - Windows Server
-      - Jumphost, Postman
-    * - LAMP Server
-      - Ubuntu server with application
-
-Access and Credential Summary
+Lab Compents
 
 .. list-table::
     :widths: 20 40 40
     :header-rows: 1
     :stub-columns: 1
 
-    * - **System**
-      - **Username**
-      - **Password**
-    * - Windows Server Jumphost
-      - user
-      - user
+    * - **System Type**
+      - **Networks**
+      - **Credentials**
+
     * - BIG-IP01
-      - admin
-      - admin
+      - Management: 10.1.1.4
+        Internal: 10.1.10.10
+        External: 10.1.20.10
+      - admin / admin
     * - BIG-IP02
-      - admin
-      - admin
-    * - BIG-IQ CM
-      - admin
-      - admin
-    * - BIG-IQ DCD
-      - admin
-      - admin
+      - Management: 10.1.1.1
+        Internal: 10.1.10.11
+        External: 10.1.20.11
+      - admin / admin
+    * - Windows Server
+      - Management: 10.1.1.9
+        Internal: 10.1.10.41
+      - user / user
     * - LAMP Server
-      - ubuntu
-      - <use SSH key>
+      - Management: 10.1.1.6
+        Internal: 10.1.10.30
+      - None
+
+
