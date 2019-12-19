@@ -1,6 +1,23 @@
 Getting Started
 
-Lab Topology
+Lab Setup
+
+.. list-table::
+    :widths: 20 40
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - **System Type**
+      - **Description**
+
+    * - BIG-IP01
+      - BIG-IP in HA configuration
+    * - BIG-IP02
+      - BIG-IP in HA configuration
+    * - Windows Server
+      - Jumphost, Postman
+    * - LAMP Server
+      - Ubuntu server with application
 
 Access and Credential Summary
 
