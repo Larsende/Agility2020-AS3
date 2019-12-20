@@ -312,5 +312,3 @@ texinfo_documents = [
      author, classname, classname,
      'Training'),
 ]
-
-
