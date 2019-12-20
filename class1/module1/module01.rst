@@ -1,6 +1,6 @@
-Getting Started
+= Getting Started
 
-Lab Components
+- Lab Components
 
 The following table lists the virtual appliances in the lab along with their networks and credentials to use.
 
