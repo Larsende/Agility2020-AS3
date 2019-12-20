@@ -5,10 +5,10 @@
 # ------------
 #
 # REQUIRED: Your class/lab name
-classname = "F5 Solutions"
+classname = "F5 Application Deployments with BIG-IP and Application Services (AS3)"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
-github_repo = "https://github.com/f5devcentral/"
+github_repo = "https://github.com/larsende/Agility2020-AS3"
 
 # OPTIONAL: Google Analytics
 # googleanalytics_id = 'UA-85156643-4'
