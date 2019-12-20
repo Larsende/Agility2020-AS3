@@ -1,6 +1,7 @@
 Getting Started
 
-Lab Compents
+Lab Components
+The following table lists the virtual appliances in the lab along with their networks and credentials to use.
 
 .. list-table::
     :widths: 20 40 40
