@@ -20,8 +20,7 @@ import os
 import sys
 import time
 import re
-import string
-sys.path.insert(0, os.path.abspath('.'))
+import string sys.path.insert(0, os.path.abspath('.'))
 import f5_sphinx_theme
 import pkgutil
 
@@ -140,15 +139,15 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'F5 Programmability Training'
+project = u'F5 Application Deployments with BIG-IP and Application Services (AS3)'
 copyright = u'F5 Networks, Inc.'
-author = u'https://f5.com/supernetops'
+author = u''
 
 classname = project
 cleanname = re.sub('\W+','',project)
 year = time.strftime("%Y")
 #eventname = "Agility %s Hands-on Lab Guide" % (year)
-eventname = "F5 Super-NetOps Program"
+eventname = "F5 Application Deployments with BIG-IP and Application Services (AS3)"
 rst_prolog = """
 .. |classname| replace:: %s
 .. |classbold| replace:: **%s**
