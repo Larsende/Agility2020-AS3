@@ -346,7 +346,7 @@
 			"protocolProfileBehavior": {}
 		},
 		{
-			"name": "Lab 3",
+			"name": "Lab 2",
 			"item": [
 				{
 					"name": "BIG-IP: Basic HTTPS Load Balancing",
