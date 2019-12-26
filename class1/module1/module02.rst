@@ -4,11 +4,11 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 
 **Exercise 1 - Connect to the Windows host system via RDP**
 
-#. Click on the 'components' tab in your UDF deployment 
+#. Click on the `components` tab in your UDF deployment 
     .. image:: /_static/components.jpg
 
 
-#. Under 'Systems' find the Windows Server 2019 Base and click 'access',then click 'RDP'. This will download a .rdp file to your local machine.
+#. Under `Systems` find the Windows Server 2019 Base and click `access`,then click 'RDP'. This will download a .rdp file to your local machine.
 
 #. Open the .rdp file downloaded in the previous step and click 'continue' when prompted. The username and password  is user/user, respectively. 
 
