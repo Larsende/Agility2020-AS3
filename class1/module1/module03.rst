@@ -67,3 +67,68 @@ The body will look like the following:
             }
           }
         }
+
+ #. In many environments it is required to perform TLS (SSL) from beginning to end of the communication path.  In this example we will perform SSL Bridging by adding a ServerSSL Profile:
+
+ The body of the post will be as follows:
+
+ ..code-block:: json
+    :linenos:
+    {
+        "class": "ADC",
+        "schemaVersion": "3.0.0",
+        "id": "TEST_Service_HTTPS",
+        "Sample_03": {
+          "class": "Tenant",
+          "TEST_Service_Https_MultiAddr_Local": {
+         "class": "Application",
+          "template": "https",
+            "serviceMain": {
+              "class": "Service_HTTPS",
+              "virtualAddresses": [
+                "10.1.20.46"
+              ],
+              "virtualPort": 443,
+              "clientTLS": "pTlsClient_Local",
+              "serverTLS": "pTlsServer_Local"
+            },
+            "pTlsClient_Local": {
+              "class": "TLS_Client",
+              "label": "simplest decl requires just cert",
+              "clientCertificate": "tlsclient_local_cert"
+            },
+            "tlsclient_local_cert": {
+              "class": "Certificate",
+              "remark": "replace these with real certificates and keys",
+              "certificate": "-----BEGIN CERTIFICATE-----\n...\n-----END CERTIFICATE-----",
+              "privateKey": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----",
+              "passphrase": {
+                "ciphertext": "ZjVmNQ==",
+                "protected": "eyJhbGciOiJkaXIiLCJlbmMiOiJub25lIn0",
+                "ignoreChanges": true
+              }
+            },
+            "pTlsServer_Local": {
+              "class": "TLS_Server",
+              "label": "simplest decl requires just cert",
+              "certificates": [
+                {
+                  "certificate": "tlsserver_local_cert"
+                }
+              ]
+            },
+            "tlsserver_local_cert": {
+              "class": "Certificate",
+              "remark": "replace these with real certificates and keys",
+              "certificate": "-----BEGIN CERTIFICATE-----\n...\n-----END CERTIFICATE-----",
+              "privateKey": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----",
+              "passphrase":{
+                  "ciphertext": "ZjVmNQ==",
+                  "protected": "eyJhbGciOiJkaXIiLCJlbmMiOiJub25lIn0",
+                  "ignoreChanges": true
+              }
+            }
+          }
+        }
+      }
+
