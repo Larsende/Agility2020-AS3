@@ -72,9 +72,9 @@ The body will look like the following:
 
  The body of the post will be as follows:
 
-    ..code-block:: json
+    .. code-block:: json
         :linenos:
-        
+
          {
           "class": "AS3",
           "action": "deploy",
