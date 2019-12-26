@@ -28,7 +28,7 @@ The body will look like the following:
                 "serviceMain": {
                   "class": "Service_HTTPS",
                   "virtualAddresses": [
-                    "10.1.20.45"
+                    "10.1.10.45"
                   ],
                   "pool": "web_pool",
                   "serverTLS": "webtls"
@@ -41,9 +41,10 @@ The body will look like the following:
                   ],
                   "members": [{
                     "servicePort": 80,
+                    "shareNodes": true,
                     "serverAddresses": [
-                      "10.1.10.30",
-                      "10.1.10.31"
+                      "10.1.20.13",
+                      "10.1.20.15"
                     ]
                   }]
                 },
@@ -93,7 +94,7 @@ The body will look like the following:
                 "serviceMain": {
                 "class": "Service_HTTPS",
                 "virtualAddresses": [
-                    "10.1.20.46"
+                    "10.1.10.46"
                 ],
                 "pool": "web_pool",
                 "clientTLS": {
@@ -111,8 +112,8 @@ The body will look like the following:
                     "servicePort": 443,
                     "shareNodes": true,
                     "serverAddresses": [
-                    "10.1.10.30",
-                    "10.1.10.31"
+                    "10.1.20.13",
+                    "10.1.10.15"
                     ]
                 }]
                 },
