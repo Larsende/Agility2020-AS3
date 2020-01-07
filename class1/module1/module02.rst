@@ -8,9 +8,9 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
     .. image:: /_static/components.jpg
 
 
-#. Under `Systems` find the Windows Server 2019 Base and click `access`,then click 'RDP'. This will download a .rdp file to your local machine.
+#. Under ''Systems'' find the Windows Server 2019 Base and click ''access'',then click ''RDP''. This will download a .rdp file to your local machine.
 
-#. Open the .rdp file downloaded in the previous step and click 'continue' when prompted. The username and password  is user/user, respectively. 
+#. Open the .rdp file downloaded in the previous step and click ''continue'' when prompted. The username and password  is user/user, respectively. 
 
 #. Congratulations! You are now connected to your windows jump host.  
 
