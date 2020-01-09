@@ -59,6 +59,7 @@ Starting the Lab
     .. image:: /_static/Win2019_RDP_Login.png
 
 #. When prompted, click ''Yes'' to connection, and session will be established to Windows host.
+    .. image:: /_static/RDP_Connect.jpg
 
 #. Congratulations! You are now connected to your windows jump host.
 
