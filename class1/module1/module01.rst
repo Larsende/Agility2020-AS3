@@ -45,21 +45,21 @@ Starting the Lab
     .. image:: /_static/components.jpg
 
 #. Under ''Systems'' find the Windows Server 2019 Base and click ''Access'',then click ''RDP''.  When prompted, select option to "Save" RDP file.  RDP file will be downloaded to your local machine.
-    .. image:: /_static/Win2019_RDP_Access.png
+    .. image:: /_static/Win2019_RDP_Access.PNG
 
 #. Open the RDP file downloaded in the previous step and click ''Continue'' when prompted.
-    .. image:: /_static/Win2019_RDP_Continue.png
+    .. image:: /_static/Win2019_RDP_Continue.PNG
 
 #. When prompted for login credentials, select ''More Choices''.
 
 #. Select ''Use a different account'' under ''More Choices'' option.
-    .. image:: /_static/Win2019_RDP_DiffAccount.png
+    .. image:: /_static/Win2019_RDP_DiffAccount.PNG
 
 #. Enter credentials: user / user, then click ''OK''.
-    .. image:: /_static/Win2019_RDP_Login.png
+    .. image:: /_static/Win2019_RDP_Login.PNG
 
 #. When prompted, click ''Yes'' to connection, and session will be established to Windows host.
-    .. image:: /_static/RDP_Connect.jpg
+    .. image:: /_static/Win2019_RDP_Connect.JPG
 
 #. Congratulations! You are now connected to your windows jump host.
 
