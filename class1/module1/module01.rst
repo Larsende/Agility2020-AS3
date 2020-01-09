@@ -29,6 +29,7 @@ The following table lists the virtual appliances in the lab along with their net
     * - Windows Server
       - Management: 10.1.1.9
         Internal: 10.1.10.41
+        External: 10.1.20.41
       - user / user
     * - LAMP Server
       - Management: 10.1.1.6
