@@ -45,15 +45,18 @@ Starting the Lab
     .. image:: /_static/components.jpg
 
 #. Under ''Systems'' find the Windows Server 2019 Base and click ''Access'',then click ''RDP''.  When prompted, select option to "Save" RDP file.  RDP file will be downloaded to your local machine.
-    .. image:: /_static/components.jpg
+    .. image:: /_static/Win2019_RDP_Access.png
 
-#. Open the RDP file downloaded in the previous step and click ''Continue'' when prompted. 
+#. Open the RDP file downloaded in the previous step and click ''Continue'' when prompted.
+    .. image:: /_static/Win2019_RDP_Continue.png
 
 #. When prompted for login credentials, select ''More Choices''.
 
 #. Select ''Use a different account'' under ''More Choices'' option.
+    .. image:: /_static/Win2019_RDP_DiffAccount.png
 
 #. Enter credentials: Username: user / Password: user, then click ''OK''.
+    .. image:: /_static/Win2019_RDP_Login.png
 
 #. When prompted, click ''Yes'' to connection, and session will be established to Windows host.
 
