@@ -40,29 +40,27 @@ The following table lists the virtual appliances in the lab along with their net
 Starting the Lab
 ================
 
-**Connect to the Windows host system via RDP**
-
-#. Click on the `Components` tab in your UDF deployment
+#. Click on the ``Components`` tab in your UDF deployment
     .. image:: /_static/components.jpg
 
-#. Under ''Systems'' find the Windows Server 2019 Base and click ''Access'',then click ''RDP''.  When prompted, select option to "Save" RDP file.  RDP file will be downloaded to your local machine.
-    .. image:: /_static/Win2019_RDP_Access.PNG
+#. Under ``Systems`` find the Windows Server 2019 Base and click ``Access``,then click ``RDP``.  When prompted, select option to ``Save`` RDP file.  RDP file will be downloaded to your local machine.
+    .. image:: /_static/Win2019_RDP_Access.JPG
 
-#. Open the RDP file downloaded in the previous step and click ''Continue'' when prompted.
-    .. image:: /_static/Win2019_RDP_Continue.PNG
+#. Open the RDP file downloaded in the previous step and click ``Continue`` when prompted.
+    .. image:: /_static/Win2019_RDP_Connect.JPG
 
-#. When prompted for login credentials, select ''More Choices''.
+#. When prompted for login credentials, select ``More Choices``.
 
-#. Select ''Use a different account'' under ''More Choices'' option.
-    .. image:: /_static/Win2019_RDP_DiffAccount.PNG
+#. Select ``Use a different account`` under ``More Choices`` option.
+    .. image:: /_static/Win2019_RDP_DiffAccount.JPG
 
 #. Enter credentials: user / user
 
-#. Click ''OK''.
-    .. image:: /_static/Win2019_RDP_Login.PNG
+#. Click ``OK``.
+    .. image:: /_static/Win2019_RDP_Login.JPG
 
-#. When prompted, click ''Yes'' to connection, and session will be established to Windows host.
-    .. image:: /_static/Win2019_RDP_Connect.JPG
+#. When prompted, click ``Yes`` to connection, and session will be established to Windows host.
+    .. image:: /_static/Win2019_RDP_YesConnect.JPG
 
 #. Congratulations! You are now connected to your windows jump host.
 
