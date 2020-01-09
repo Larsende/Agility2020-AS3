@@ -38,3 +38,24 @@ The following table lists the virtual appliances in the lab along with their net
 
 Starting the Lab
 ================
+
+**Connect to the Windows host system via RDP**
+
+#. Click on the `Components` tab in your UDF deployment
+    .. image:: /_static/components.jpg
+
+#. Under ''Systems'' find the Windows Server 2019 Base and click ''Access'',then click ''RDP''.  When prompted, select option to "Save" RDP file.  RDP file will be downloaded to your local machine.
+    .. image:: /_static/components.jpg
+
+#. Open the RDP file downloaded in the previous step and click ''Continue'' when prompted. 
+
+#. When prompted for login credentials, select ''More Choices''.
+
+#. Select ''Use a different account'' under ''More Choices'' option.
+
+#. Enter credentials: Username: user / Password: user, then click ''OK''.
+
+#. When prompted, click ''Yes'' to connection, and session will be established to Windows host.
+
+#. Congratulations! You are now connected to your windows jump host.
+
