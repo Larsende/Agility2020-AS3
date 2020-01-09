@@ -55,7 +55,9 @@ Starting the Lab
 #. Select ''Use a different account'' under ''More Choices'' option.
     .. image:: /_static/Win2019_RDP_DiffAccount.PNG
 
-#. Enter credentials: user / user, then click ''OK''.
+#. Enter credentials: user / user
+
+#. Click ''OK''.
     .. image:: /_static/Win2019_RDP_Login.PNG
 
 #. When prompted, click ''Yes'' to connection, and session will be established to Windows host.
