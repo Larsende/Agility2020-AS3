@@ -2,21 +2,7 @@ Lab 1 - Creating a Simple HTTP Application using AS3 Declarative Interface & AS3
 --------------------------------------------------------------------------------------------------
 In this lab, we will create a simple HTTP application using AS3. Before sending the AS3 declaration, we will use Microsoft's Visual Studio Code to validate our JSON schema.
 
-**Exercise 1 - Connect to the Windows host system via RDP**
-
-#. Click on the `components` tab in your UDF deployment
-    .. image:: /_static/components.jpg
-
-
-#. Under ''Systems'' find the Windows Server 2019 Base and click ''access'',then click ''RDP''. This will download a .rdp file to your local machine.
-
-#. Open the .rdp file downloaded in the previous step and click ''continue'' when prompted. The username and password  is user/user, respectively.
-
-#. Congratulations! You are now connected to your windows jump host.
-
-
-
-**Exercise 2 - Launch and configure Postman**
+**Exercise 1 - Launch and configure Postman**
 
 #. Right click and open Postman
 
@@ -49,7 +35,7 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 
     .. image:: /_static/eye.jpg
 
-**Exercise 3 - AS3 declaration**
+**Exercise 2 - AS3 declaration**
 
 #. Expand the AS3 collections folder that we imported by clicking on it.
 #. First, we will send a GET request to our BIG-IP to see information about the AS3 RPM.
@@ -60,7 +46,7 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 #. Before we send our AS3 JSON to the BIG-IP, we want to ensure the schema is valid. In order to do this, we will use VS Code.
 
 
-**Exercise 4 - Visual Studio Code Schema Validation**
+**Exercise 3 - Visual Studio Code Schema Validation**
 
 #. Open VS Code.
 
@@ -74,7 +60,7 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 #. Now that we have validated our schema, we can confidently send this declaration to the BIG-IP to create an HTTP application.
 
 
-**Exercise 5 - Send AS3 declaration**
+**Exercise 4 - Send AS3 declaration**
 
 #. Go back to Postman and find the HTTP Application JSON file. Note the only difference between this and the one we used to validate is the first line with the key/value of 'schema' and the schema format URL.
 #. Send the AS3 declaration by clicking the blue 'SEND' button. Ensure once it is done processing that you receive a 200 OK response.
@@ -82,7 +68,7 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 
 
 
-**Exercise 6 - Confirm changes on BIG-IP**
+**Exercise 5 - Confirm changes on BIG-IP**
 
 #. Login to the BIG-IP to confirm our changes. Open up the web browser (Chrome) and navigate to 'https://10.1.1.5".
 #. Login with the following credentials: username = admin , password = admin.
@@ -99,7 +85,7 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 
     .. image:: /_static/pool_members.jpg
 
-**Exercise 7 - Delete HTTP tenant**
+**Exercise 6 - Delete HTTP tenant**
 
 #. In order to delete our virtual server, pool and pool members, we can simply send a POST with an empty tenant body. Since AS3 is declarative, it will notice that we are sending a POST with an empty tenant body, and will by default delete the existing virtual server, pool and pool members.
 #. In Postman, find the 'DELETE application' file. Examine the uri and body declaration. Notice we are sending a POST to the same API endpoint, but take a close look at the JSON body.
