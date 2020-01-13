@@ -11,7 +11,7 @@ This lab will be broken down to 3 parts.
 Already Existing WAF policy deployment
 --------------------------------------
 
-If you already have a WAF policy on the BIG-IP that you would like to apply to your application then it is easy enough to just reference it in the AS3 declaration as follows:
+If you already have a WAF policy on the BIG-IP that you would like to apply to your application then it is easy enough to just reference it in the AS3 declaration in the policyWAF area, as follows:
 
     .. code-block:: json
         :linenos:
@@ -84,7 +84,7 @@ If you already have a WAF policy on the BIG-IP that you would like to apply to y
 WAF policy in source repository
 -------------------------------
 
-If you store your WAF policy in a Source Control Repository you can call it as follows with the URL for the WAF Policy file:
+If you store your WAF policy in a Source Control Repository you can call it as follows, notice the Policy at the bottom and the policyWAF referencing it, with the URL for the WAF Policy file:
 
 The body of the post will be as follows:
 
@@ -113,6 +113,9 @@ The body of the post will be as follows:
                     "10.1.10.103"
                 ],
                 "pool": "web_pool",
+                "policyWAF": {
+                    "use": "My_AWAF_Policy"
+                },
                 "clientTLS": {
                     "bigip": "/Common/serverssl"
                 },
