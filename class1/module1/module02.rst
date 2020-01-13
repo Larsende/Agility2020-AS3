@@ -85,7 +85,28 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 
     .. image:: /_static/pool_members.jpg
 
-**Exercise 6 - Delete HTTP tenant**
+
+**Exercise 6 - Modify AS3 declaration**
+
+#. Currently, our declaration only has 1 pool member. In this exercise, we will modify the AS3 declaration to add another pool member to our virtual server. 
+#. Go back to postman and find the AS3 declaration we just pushed previously. 
+#. Locate in the declaration where we declare the pool members:
+
+    .. image:: /_static/one_pool_member.jpg
+
+#. In order to add another pool member, we must follow appropriate syntax and declare the pool member as follows:
+
+    .. image:: /_static/two_pool_members.jpg
+
+#. Once we have done this, we can send this updated declaration by clicking the blue 'SEND' button. 
+
+    .. image:: /_static/send.jpg
+
+#. Follow the steps from exercise 5 to visually confirm the changes have been made on the BIG-IP. 
+
+#. **NOTE**: When changing the AS3 declaration, we changed the end state we would like the BIG-IP to be in. This is one major advantage of a declarative interface.  
+
+**Exercise 7 - Delete HTTP tenant**
 
 #. In order to delete our virtual server, pool and pool members, we can simply send a POST with an empty tenant body. Since AS3 is declarative, it will notice that we are sending a POST with an empty tenant body, and will by default delete the existing virtual server, pool and pool members.
 #. In Postman, find the 'DELETE application' file. Examine the uri and body declaration. Notice we are sending a POST to the same API endpoint, but take a close look at the JSON body.
