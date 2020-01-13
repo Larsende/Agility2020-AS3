@@ -86,7 +86,7 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
     .. image:: /_static/pool_members.jpg
 
 
-**Exercise 6 - Send AS3 declaration**
+**Exercise 6 - Modify AS3 declaration**
 
 #. Currently, our declaration only has 1 pool member. In this exercise, we will modify the AS3 declaration to add another pool member to our virtual server. 
 #. Go back to postman and find the AS3 declaration we just pushed previously. 
