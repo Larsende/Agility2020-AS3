@@ -56,7 +56,7 @@ If you already have a WAF policy on the BIG-IP that you would like to apply to y
                     "servicePort": 443,
                     "shareNodes": true,
                     "serverAddresses": [
-                    "10.1.10.30"
+                    "10.1.10.31"
                     ]
                 }]
                 },
@@ -131,7 +131,7 @@ The body of the post will be as follows:
                     "servicePort": 443,
                     "shareNodes": true,
                     "serverAddresses": [
-                    "10.1.10.30"
+                    "10.1.10.31"
                     ]
                 }]
                 },
