@@ -4,13 +4,11 @@ In this lab, we will create two simple HTTP application using AS3 within the sam
 
 **Exercise 1 - AS3 Declaration**
 
-#. Right click and open Postman
+#. Open Postman and locate the module 5 folder under collections on the left side of postman. Double-click the 'HTTP Multiple-Application' file.
 
-#. Locate the module 5 folder under collections on the left side of postman. Double-click the 'Multiple HTTP Applications' declaration.
+#. Examine the body of the AS3 declaration. Note the schema and how we are declaring two HTTP applications within the same tenant. 
 
-#. Examine the body of the declaration. Note the schema and how we are declaring two HTTP applications within the same tenant.
-
-#. Send the declaration and confirm a 200 OK response. 
+#. After examining the declaration, send the declaration and confirm a 200 OK response. 
 
 #. Navigate to the BIG-IP and visually confirm the changes have been made. 
 
@@ -20,8 +18,8 @@ In this lab, we will create two simple HTTP application using AS3 within the sam
 
 **Exercise 2 - Modify an HTTP Application within a Multi-App Single Tenant AS3 Declaration**
 
-#. In our module 5 folder in postman, locate the declaration we previously sent.
-#. We want to add another pool member to our 'http_app_2' and the pool member we want to add is '10.1.10.34'. 
+#. In Postman, locate the declaration we previously sent.
+#. We want to modify 1 of our HTTP Applications. We will add another pool member to our 'http_app_2' and the pool member we want to add is '10.1.10.34'. 
 #. Modify the AS3 declaration so that our 'http_app_2' has the appropriate pool members. Once modified, send the declaration.
 
     .. image:: /_static/3_pool_members.jpg
@@ -31,6 +29,7 @@ In this lab, we will create two simple HTTP application using AS3 within the sam
     .. image:: /_static/confirm_3.jpg
 
     .. image:: /_static/confirm_3_nodes.jpg
+
 
 
 **Exercise 3 - Delete HTTP Applications and Tenant**
