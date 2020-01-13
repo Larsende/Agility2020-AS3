@@ -20,7 +20,7 @@ If you already have a WAF policy on the BIG-IP that you would like to apply to y
         "class": "AS3",
         "action": "deploy",
         "persist": true,
-        "syncToGroup": "/Common/sync-failover-dg",
+        "syncToGroup": "/Common/failoverGroup",
         "declaration": {
             "class": "ADC",
             "schemaVersion": "3.0.0",
@@ -95,7 +95,7 @@ The body of the post will be as follows:
         "class": "AS3",
         "action": "deploy",
         "persist": true,
-        "syncToGroup": "/Common/sync-failover-dg",
+        "syncToGroup": "/Common/failoverGroup",
         "declaration": {
             "class": "ADC",
             "schemaVersion": "3.0.0",
@@ -147,13 +147,15 @@ The body of the post will be as follows:
                     "ciphertext": "ZjVmNQ==",
                     "protected": "eyJhbGciOiJkaXIiLCJlbmMiOiJub25lIn0"
                 }
-                }
+                },
                 "My_AWAF_Policy": {
                     "class": "WAF_Policy",
-                    "url": "https://raw.githubusercontent.com/Larsende/Agility2020-AS3/master/_static/Common_test_policy__2020-1-13_9-38-13__bigip02.as3lab.com.xml",
-                    "ignorechanges": true
+                    "url": "https://raw.githubusercontent.com/Larsende/Agility2020-AS3/master/_static/Common_test_policy__2020-1-13_9-38-13__bigip02.as3lab.com.xml"
                 }
             }
             }
         }
         }
+
+If you go to /Security/Application Security/Security Policies and then select the Sample_04 partition you will notice there are two security policies.  One in the Common partition and one in the Sample_04 partition.  The Sample_04 instance is named My_AWAF_Policy.
+
