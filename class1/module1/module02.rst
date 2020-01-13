@@ -80,9 +80,11 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 #. You should now see your virtual server created. Navigate to 'Pools' and examine your pool that was created. Click on the 'http_pool' and click on the 'members' tab to view the pool members.
 
     .. image:: /_static/virtual_server.jpg
+    
 
     .. image:: /_static/pool.jpg
-
+    
+    
     .. image:: /_static/pool_members.jpg
 
 
