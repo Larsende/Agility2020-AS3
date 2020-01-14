@@ -2,40 +2,7 @@ Lab 1 - Creating a Simple HTTP Application using AS3 Declarative Interface & AS3
 --------------------------------------------------------------------------------------------------
 In this lab, we will create a simple HTTP application using AS3. Before sending the AS3 declaration, we will use Microsoft's Visual Studio Code to validate our JSON schema.
 
-**Exercise 1 - Launch and configure Postman**
-
-#. Right click and open Postman
-
-    .. image:: /_static/postman.jpg
-
-#. Once Postman has launched, we need load our environment, variables and import the collections we will be using for the lab.
-#. First, lets import the collections, which are located on a github repo. On the top left, click the 'import' button.
-
-    .. image:: /_static/import.jpg
-
-#. Select 'import from link' and paste the following link into the text box, then click 'import':
-
-    .. image:: /_static/import_from_link.jpg
-
-#. You should now see a new folder under the collections tab to the left of your postman application screen.
-
-#. Navigate to File -> Settings and confirm the 'SSL certificate verification' option is  turned OFF. If it is on, please turn it OFF. Once finished, exit the settings menu.
-
-#. Now we will import an environment. An environment is a set of variables that allow you to switch the context of your requests. Repeat the same steps we did to import our collections. On the top left, click the 'import' button.
-
-    .. image:: /_static/import.jpg
-
-#. Select 'import from link' and paste the following link into the text box, then click 'import':
-
-    .. image:: /_static/import_from_link.jpg
-
-#. Navigate to the top right of Postman where you will see a dropdown menu to choose your environment. Click on the environment we just imported. You can then view the variables and their values by clicking the eye button.
-
-    .. image:: /_static/environment.jpg
-
-    .. image:: /_static/eye.jpg
-
-**Exercise 2 - AS3 declaration**
+**Exercise 1 - AS3 declaration**
 
 #. Expand the AS3 collections folder that we imported by clicking on it.
 #. First, we will send a GET request to our BIG-IP to see information about the AS3 RPM.
@@ -46,7 +13,7 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 #. Before we send our AS3 JSON to the BIG-IP, we want to ensure the schema is valid. In order to do this, we will use VS Code.
 
 
-**Exercise 3 - Visual Studio Code Schema Validation**
+**Exercise 2 - Visual Studio Code Schema Validation**
 
 #. Open VS Code.
 
@@ -60,15 +27,13 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 #. Now that we have validated our schema, we can confidently send this declaration to the BIG-IP to create an HTTP application.
 
 
-**Exercise 4 - Send AS3 declaration**
+**Exercise 3 - Send AS3 declaration**
 
 #. Go back to Postman and find the HTTP Application JSON file. Note the only difference between this and the one we used to validate is the first line with the key/value of 'schema' and the schema format URL.
 #. Send the AS3 declaration by clicking the blue 'SEND' button. Ensure once it is done processing that you receive a 200 OK response.
 
 
-
-
-**Exercise 5 - Confirm changes on BIG-IP**
+**Exercise 4 - Confirm changes on BIG-IP**
 
 #. Login to the BIG-IP to confirm our changes. Open up the web browser (Chrome) and navigate to 'https://10.1.1.5".
 #. Login with the following credentials: username = admin , password = admin.
@@ -88,7 +53,7 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
     .. image:: /_static/pool_members.jpg
 
 
-**Exercise 6 - Modify AS3 declaration**
+**Exercise 5 - Modify AS3 declaration**
 
 #. Currently, our declaration only has 1 pool member. In this exercise, we will modify the AS3 declaration to add another pool member to our virtual server. 
 #. Go back to postman and find the AS3 declaration we just pushed previously. 
@@ -108,7 +73,7 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 
 #. **NOTE**: When changing the AS3 declaration, we changed the end state we would like the BIG-IP to be in. This is one major advantage of a declarative interface.  
 
-**Exercise 7 - Delete HTTP tenant**
+**Exercise 6 - Delete HTTP tenant**
 
 #. In order to delete our virtual server, pool and pool members, we can simply send a POST with an empty tenant body. Since AS3 is declarative, it will notice that we are sending a POST with an empty tenant body, and will by default delete the existing virtual server, pool and pool members.
 #. In Postman, find the 'DELETE application' file. Examine the uri and body declaration. Notice we are sending a POST to the same API endpoint, but take a close look at the JSON body.
