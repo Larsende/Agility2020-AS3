@@ -11,7 +11,9 @@ This lab will be broken down to 3 parts.
 Already Existing WAF policy deployment
 --------------------------------------
 
-If you already have a WAF policy on the BIG-IP that you would like to apply to your application then it is easy enough to just reference it in the AS3 declaration in the policyWAF area, as follows:
+#. If you already have a WAF policy on the BIG-IP that you would like to apply to your application then it is easy enough to just reference it in the AS3 declaration in the policyWAF area.
+
+#. In Postman select the Lab3, ``HTTPS with local WAF policy`` request.  Notice in the body the ``policyWAF`` option.
 
     .. code-block:: json
         :linenos:
@@ -84,7 +86,9 @@ If you already have a WAF policy on the BIG-IP that you would like to apply to y
 WAF policy in source repository
 -------------------------------
 
-If you store your WAF policy in a Source Control Repository you can call it as follows, notice the Policy at the bottom and the policyWAF referencing it, with the URL for the WAF Policy file:
+#. If you store your WAF policy in a Source Control Repository you can call it as follows.
+
+#. Select the Lab3, ``HTTPS with external WAF policy`` request. Notice the Policy at the bottom and the policyWAF referencing it, with the URL for the WAF Policy file:
 
 The body of the post will be as follows:
 
