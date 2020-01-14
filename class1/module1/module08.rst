@@ -1,18 +1,17 @@
-Lab 3 - Creating a Simple HTTP Application using AS3 Declarative Interface & BIG-IQ
+Lab 8 - Creating a Applications using AS3 Declarative Interface & BIG-IQ
 --------------------------------------------------------------------------------------------------
-In this lab, we will create a simple HTTP application using AS3. Before sending the AS3 declaration, we will use Microsoft's Visual Studio Code to validate our JSON schema. 
+In this lab, we will create a simple HTTP application using AS3. 
 
-#. Unless instructed, throughout this section we will be working in the ``BIG-IQ`` Collection in Postman. This folder holds 15 enclosed requests that we will work through.
+Unless instructed, throughout this section we will be working in the ``BIG-IQ`` Collection in Postman. This folder holds 15 enclosed requests that we will work through.
 
-#. If the error "Cannot find any ADC root nodes for the target devices" occurs, follow directions here: https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/userguide/troubleshooting.html
+If the error ``Cannot find any ADC root nodes for the target devices`` occurs, follow directions here: https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/userguide/troubleshooting.html
 
 
 
 
 **Exercise 1 - Authenticate to the BIG-IQ**
 
-#. Open the ``Authenticate to BIG-IQ`` request.
-Note that tokens need to be refreshed after 15 minutes. 401 Errors will occur if the token is bad or old. 
+#. Open the ``Authenticate to BIG-IQ`` request. Note that tokens need to be refreshed after 15 minutes. 401 Errors will occur if the token is bad or old. Resending this request will refresh the token.
 
 #. Click on the ``Body`` section of the POST Request.
 The body will look like the following:
@@ -27,6 +26,10 @@ The body will look like the following:
         }
 
 #. Click the blue ``Send`` button. Ensure that you receive a 200 OK response.
+
+
+
+
 
 
 
@@ -82,7 +85,7 @@ The body will look like the following:
             }
         }
         
-#. Let's disect this request. 
+#. Looking further into this request:. 
 The URI is sent to the IP address of BIG-IQ instead of the BIG-IP address per past requests.
 Lines 9-11 target the BIG-IP we would like to build this application on.
 Lines 12-40 build an http application we have in past sections in this lab.
@@ -94,7 +97,7 @@ Lines 12-40 build an http application we have in past sections in this lab.
 #. Navigate to Chrome, BIG-IQ bookmark 10.1.1.7 (username = admin: password = admin), Applications, Applications.
     .. image:: /_static/bigiq_1.jpg
 
-#. Let's move our applciations from ``Unknown Applications`` to another tile named ``Known Applications``.
+#. Now we will move our applciations from ``Unknown Applications`` to another tile named ``Known Applications``.
 
 #. Send the ``Get Application Reference`` request to set the variable _bigiq_app_ref.
 
@@ -104,7 +107,7 @@ Lines 12-40 build an http application we have in past sections in this lab.
 
 #. Navigate back to the BIG-IQ Applications and notice that our app is now under the ``Known Applications`` tile.
 
-#. Now that we've had some fun, lets delete the app. Open the ``Delete App w/o Template`` request. 
+#. Now that we have had some fun, lets delete the app. Open the ``Delete App w/o Template`` request. 
 
 #. Click the blue ``Send`` button. Ensure that you receive a 200 OK response. 
 
@@ -117,7 +120,6 @@ Lines 12-40 build an http application we have in past sections in this lab.
 
 #. Open the ``Upload App Template to BIG-IQ`` request. 
 Note that this this request was taken from https://github.com/f5devcentral/f5-big-iq.
-
 
 #. Click on the ``Body`` section of the POST Request.
 The body will look like the following:
@@ -382,7 +384,7 @@ The body will look like the following:
             }
         }
 
-#. Let's disect this request. 
+#. Looking further into this request:. 
 Lines 3 names the application template.
 Lines 11-257 defines the schema for the application template.
 
@@ -427,14 +429,14 @@ The body will look like the following:
             }
         }
 
-#. Let's disect this request. 
-Line 13 defines the schema that we're going to use: ``AS3-F5-HTTP-lb-template-big-iq-default-v1``.
+#. Looking further into this request:. 
+Line 13 defines the schema that we are going to use: ``AS3-F5-HTTP-lb-template-big-iq-default-v1``.
 
 #. Click the blue ``Send`` button. Ensure that you receive a 200 OK response. 
 
 #. This application is now in the ``Demo Service`` partition on the BIG-IP (10.1.1.4).
 
-#. Now let's change this application. Open the ``Change App2`` request.
+#. Now we will change this application. Open the ``Change App2`` request.
 
 #. Click on the ``Body`` section of the POST Request. 
 Notice the changed IP address:
@@ -471,7 +473,7 @@ Notice the changed IP address:
 
 #. This application is now changed in the ``Demo Service`` partition on the BIG-IP (10.1.1.4).
 
-#. Let's delete the app. Open the ``Delete App from Template`` request. 
+#. Now we will delete the app. Open the ``Delete App from Template`` request. 
 
 #. Click the blue ``Send`` button. Ensure that you receive a 200 OK response. 
 
@@ -480,7 +482,8 @@ Notice the changed IP address:
 #. Finally, delete the application template from the BIG-IQ. 
 Open the ``GET HTTP Application Template`` request and click the blue ``Send`` button. 
 Copy the id from the Body of the response.
-.. image:: /_static/bigiq_3.jpg
+
+    .. image:: /_static/bigiq_3.jpg
 
 #. Paste the id to the URL of request ``DELETE HTTP Application Template``.
 
