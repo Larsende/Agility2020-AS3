@@ -31,7 +31,7 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 
     .. image:: /_static/vscode_newfile.jpg
 
-#. Copy the contents of the AS3 Schema Validation JSON body and paste into VS Code. Save the file to your desktop. 
+#. Copy the contents of the file 'AS3 Schema Validation' JSON body and paste into VS Code. Save the file to your desktop. 
 
 #. Notice the wavy line-- notifying you that there is a syntax error. You can hover over the wavy line to see more information.  
 
