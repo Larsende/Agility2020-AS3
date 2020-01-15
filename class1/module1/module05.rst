@@ -24,6 +24,9 @@ In this lab, we will create two simple HTTP application using AS3 within the sam
 #. **NOTE:** In Postman--and most text-editors--you can move your cursor next to an open (or closed) brace and it will locate the corresponding closed (or open) brace. This is depicted in the following images:
 
     .. image:: /_static/app_begin.jpg
+
+    |
+    
     .. image:: /_static/app_end.jpg
 
  
