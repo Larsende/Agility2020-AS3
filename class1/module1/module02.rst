@@ -6,6 +6,9 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 
 #. Expand the AS3 collections folder that we imported by clicking on it.
 #. We first need to perform an authenticated login to the BIG-IP. For security enhancement, we will not be using a basic username and password. Instead, we can make HTTP/HTTPS requests to the BIG-IP API by sending requests to the BIG-IP and including a valid BIG-IP authentication token in the 'X-F5-Auth-Token' header.
+
+    .. image:: /_static/token_auth.jpg
+
 #. Click and examine the 'BIG-IP Authenticate' file. Click 'send' and ensure a 200 OK response. 
 
 #. Now that we have setup token authentication, we can continue working with our BIG-IP. 
