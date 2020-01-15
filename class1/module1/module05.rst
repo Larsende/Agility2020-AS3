@@ -1,6 +1,6 @@
 Lab 5 - Creating Multiple HTTP Applications per tenant using AS3 Declarative Interface 
 --------------------------------------------------------------------------------------------------
-In this lab, we will create two simple HTTP application using AS3 within the same tenant. After creating these applications, we will modify one of them. 
+In this lab, we will create two simple HTTP application using AS3 within the same tenant. Afterwards, we will modify the AS3 declaration to compose and create our very own third application within the same tenant. 
 
 **Exercise 1 - Multi-App AS3 Declaration**
 
@@ -51,6 +51,8 @@ In this lab, we will create two simple HTTP application using AS3 within the sam
 
     .. image:: /_static/3apps.jpg
 
+#. You can navigate to **Local Traffic-> Pools** to confirm the changes made to the Pools. 
+
     .. image:: /_static/3pools.jpg
 
 
@@ -58,6 +60,9 @@ In this lab, we will create two simple HTTP application using AS3 within the sam
 **Exercise 3 - Delete HTTP Applications and Tenant**
 
 #. In order to delete our virtual server, pool and pool members, we can simply send a POST with an empty tenant body. Since AS3 is declarative, it will notice that we are sending a POST with an empty tenant body, and will by default delete the existing virtual server, pool and pool members.
+
+    .. image:: /_static/clear_tenant.jpg
+
 #. In Postman, find the 'DELETE application' file. Examine the uri and body declaration. Notice we are sending a POST to the same API endpoint, but take a close look at the JSON body.
 #. The body declares a AS3 tenant called http_tenant, but the body describing the state of the tenant is empty. By default, AS3 will remove the virtual server, pool and pool members. Since this would cause the entire tenant to be empty, AS3 will also remove the tenant for us.
 #. Click 'SEND' and ensure a 200 OK response. Navigate back to the BIG-IP, refresh the page and confirm the changes that the tenant has been deleted.
