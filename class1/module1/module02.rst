@@ -5,7 +5,12 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 **Exercise 1 - AS3 declaration**
 
 #. Expand the AS3 collections folder that we imported by clicking on it.
-#. First, we will send a GET request to our BIG-IP to see information about the AS3 RPM.
+#. We first need to perform an authenticated login to the BIG-IP. For security enhancement, we will not be using a basic username and password. Instead, we can make HTTP/HTTPS requests to the BIG-IP API by sending requests to the BIG-IP and including a valid BIG-IP authentication token in the 'X-F5-Auth-Token' header.
+#. Click and examine the 'BIG-IP Authenticate' file. Click 'send' and ensure a 200 OK response. 
+
+#. Now that we have setup token authentication, we can continue working with our BIG-IP. 
+
+#. We will send a GET request to our BIG-IP to see information about the AS3 RPM.
 #. Locate the 'AS3 Info' request and double click. Notice that we are sending a GET request to an API endpoint with an empty body. Click the blue **send** button and ensure you get a 200 OK response.
 
 #. Locate the 'HTTP Application' request in the same folder. Notice that we are sending a POST request to an API endpoint. To examine the body of our request, click the body tab.
