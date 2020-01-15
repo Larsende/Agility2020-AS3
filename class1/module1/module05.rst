@@ -26,7 +26,7 @@ In this lab, we will create two simple HTTP application using AS3 within the sam
     .. image:: /_static/app_begin.jpg
 
     |
-    
+
     .. image:: /_static/app_end.jpg
 
  
@@ -36,9 +36,17 @@ In this lab, we will create two simple HTTP application using AS3 within the sam
 
 #. We want to name the application 'http_app_3' and configure the following:
 
-| Virtual Server | 'http_vs_3' | 10.1.20.100 |
-| Pool | 'http_pool_3' |
-| Pool Member(s) | 10.1.10.34 and 10.1.10.35 |  
+
+
+   +---------------+------------------------------------+
+   | Virtual Server| Name: 'http_vs_3'                  |
+   |               | Address: 10.1.20.100               |
+   +---------------+------------------------------------+
+   | Pool          | Name: 'http_pool_3'                |
+   |               | Members: 10.1.10.34 and 10.1.10.35 |
+   +---------------+------------------------------------+
+
+
 
 #. Modify the AS3 declaration so that our 'http_app_3' has the appropriate information. Once modified, it should look like the following:
 
