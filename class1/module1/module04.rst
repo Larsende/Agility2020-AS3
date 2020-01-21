@@ -82,13 +82,15 @@ Already Existing WAF policy deployment
             }
         }
         }
+        
+#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200. 
 
 WAF policy in source repository
 -------------------------------
 
 #. If you store your WAF policy in a Source Control Repository you can call it as follows.
 
-#. Select the Lab3, ``HTTPS with external WAF policy`` request. Notice the Policy at the bottom and the policyWAF referencing it, with the URL for the WAF Policy file:
+#. Select the Lab3, ``HTTPS with external WAF policy`` request, and look at the ``Body``. Notice the Policy at the bottom and the policyWAF referencing it, with the URL for the WAF Policy file:
 
 The body of the post will be as follows:
 
@@ -164,11 +166,15 @@ The body of the post will be as follows:
             }
         }
         }
+        
+#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200. 
 
 If you go to /Security/Application Security/Security Policies and then select the Sample_04 partition you will notice there are two security policies.  One in the Common partition and one in the Sample_04 partition.  The Sample_04 instance is named My_AWAF_Policy.
 
 Setting WAF policy to Blocking mode:
 ------------------------------------
+
+#. Select the Lab3, ``BIG-IP: HTTPS with external WAF policy in blocking mode``, and look at the ``Body``.
 
 In order to set blocking mode we can override what is defined in the Policy with an additional enforcementMode option in our WAF Policy declaration:
 
@@ -245,3 +251,6 @@ In order to set blocking mode we can override what is defined in the Policy with
             }
         }
         }
+       
+#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200. 
+
