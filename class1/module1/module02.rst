@@ -5,20 +5,24 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 **Exercise 1 - AS3 declaration**
 
 #. Expand the AS3 collections folder that we imported by clicking on it.
-#. We first need to perform an authenticated login to the BIG-IP. For security enhancement, we will not be using a basic username and password. Instead, we can make HTTP/HTTPS requests to the BIG-IP API by sending requests to the BIG-IP and including a valid BIG-IP authentication token in the 'X-F5-Auth-Token' header.
+
+#. Open the ``Lab`` folder.
+
+#. For the lab, we will be using token-based authentication via HTTP/HTTPS to the BIG-IP API by sending requests to the BIG-IP and including a valid BIG-IP authentication token in the ``X-F5-Auth-Token`` header.
 
     .. image:: /_static/token_auth.jpg
 
-#. Click and examine the 'BIG-IP Authenticate' file. Click 'send' and ensure a 200 OK response. 
+#. Click and examine the ``BIG-IP Authenticate`` call. Click ``Send`` and ensure a 200 OK responsein the Postman response window. 
 
 #. Now that we have setup token authentication, we can continue working with our BIG-IP. 
 
-#. We will send a GET request to our BIG-IP to see information about the AS3 RPM.
-#. Locate the 'AS3 Info' request and double click. Notice that we are sending a GET request to an API endpoint with an empty body. Click the blue **send** button and ensure you get a 200 OK response.
+#. We will send a GET request to our BIG-IP to see information about the AS3 software package that was previously installed.
 
-#. Locate the 'HTTP Application' request in the same folder. Notice that we are sending a POST request to an API endpoint. To examine the body of our request, click the body tab.
+#. Locate the ``AS3 Info`` request and double click. Notice that we are sending a GET request to an API endpoint with an empty body. Click the blue **Send** button, and ensure you get a 200 OK response.
 
-#. Before we send our AS3 JSON to the BIG-IP, we want to ensure the schema is valid. In order to do this, we will use VS Code.
+#. Locate the ``HTTP Application`` request in the same folder. Notice that we are sending a POST request to an API endpoint. To examine the body of our request, click the ``Body`` tab.
+
+#. Before we send our AS3 JSON to the BIG-IP, we want to ensure the schema is valid. In order to do this, we will use VE Studio Code in the next Exercise.
 
 
 **Exercise 2 - Visual Studio Code Schema Validation**
