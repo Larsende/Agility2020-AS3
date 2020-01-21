@@ -76,11 +76,11 @@ In order to complete this lab, you will connect to a Windows jump host, and you 
 
 #. Once Postman has launched, you need load the Postman environment variables and import the collections we will be using for the lab.
 
-#. First, let's import the collections, which are located on a github repo. On the top left, click the ``Import`` button.
+#. First, import the Postman collection, which are located on a github repository. On the top left, click the ``Import`` button.
 
     .. image:: /_static/import.jpg
 
-#. Select ``Import From Link`` and paste the link into the text box, ``https://raw.githubusercontent.com/Larsende/Agility2020-AS3/master/_static/Postman-AS3-lab.json``, then click ``Import``:
+#. Select ``Import From Link`` and paste the link into the text box, ``https://raw.githubusercontent.com/Larsende/Agility2020-AS3/master/_static/AS3%20Lab%20Combined.postman_collection.json``, then click ``Import``:
 
     .. image:: /_static/import_from_link.jpg
     
@@ -88,18 +88,5 @@ In order to complete this lab, you will connect to a Windows jump host, and you 
 
 #. Navigate to File -> Settings and confirm the ``SSL Certificate Verification`` option is turned OFF. If it is on, please turn it OFF. Once finished, exit the settings menu.
 
-#. Now let's import the Postman environment. An environment is a set of variables that allow you to switch the context of your requests. Repeat the same steps we did to import our collections. On the top left, click the ``Import`` button.
-
-    .. image:: /_static/import.jpg
-
-#. Select ``Import From Link`` and paste the following link into the text box, then click ``Import``:
-
-    .. image:: /_static/import_from_link.jpg
-
-#. Navigate to the top right of Postman where you will see a dropdown menu to choose your environment, ``AS3-Lab``. Click on the environment we just imported. You can then view the variables and their values by clicking the eye button.
-
-    .. image:: /_static/environment.jpg
-
-    .. image:: /_static/eye.jpg
 
 
