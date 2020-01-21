@@ -13,7 +13,7 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
     .. image:: /_static/token_auth.jpg
 
 #. Click and examine the ``BIG-IP Authenticate`` call. Click ``Send`` and ensure a 200 OK response in the Postman response window. 
-    .. image:: /_static/Postmane200OK_Highlighted.JPG
+    .. image:: /_static/Postname200OK_Highlighted.JPG
 
 #. Now that we have setup token authentication, we can continue working with our BIG-IP. 
 
