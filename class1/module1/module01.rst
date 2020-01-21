@@ -40,6 +40,8 @@ The following table lists the virtual appliances in the lab along with their net
 Starting the Lab
 ================
 
+In order to complete this lab, you will connect to a Windows jump host, and you will perform all steps from there.  In the instructions below, there are steps to connect to that jump host first, then you will complete the other steps from there. You can open the lab guide from the Windows jump host in order to make it easier to follow the rest of the lab.
+
 **Exercise 1 - Login to Windows jump host**
 
 #. Click on the ``Components`` tab in your UDF deployment
@@ -54,9 +56,9 @@ Starting the Lab
 #. When prompted for login credentials, select ``More Choices``.
 
 #. Select ``Use a different account`` under ``More Choices`` option.
-    .. image:: /_static/Win2019_RDP_DiffAccount.JPG
 
 #. Enter credentials: user / user
+    .. image:: /_static/Win2019_RDP_DiffAccount.JPG
 
 #. Click ``OK``.
     .. image:: /_static/Win2019_RDP_Login.JPG
