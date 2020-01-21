@@ -12,7 +12,8 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 
     .. image:: /_static/token_auth.jpg
 
-#. Click and examine the ``BIG-IP Authenticate`` call. Click ``Send`` and ensure a 200 OK responsein the Postman response window. 
+#. Click and examine the ``BIG-IP Authenticate`` call. Click ``Send`` and ensure a 200 OK response in the Postman response window. 
+    .. image:: /_static/Postman200OK_Highlighted.jpg
 
 #. Now that we have setup token authentication, we can continue working with our BIG-IP. 
 
@@ -35,21 +36,23 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 
     .. image:: /_static/vscode_newfile.jpg
 
-#. Copy the contents of the file 'AS3 Schema Validation' JSON body and paste into VS Code. Save the file to your desktop. 
+#. Copy the contents of the file ``AS3 Schema Validation`` JSON body and paste into VS Code. Save the file to your desktop. 
 
-#. Notice the wavy line-- notifying you that there is a syntax error. You can hover over the wavy line to see more information.  
+#. Notice the wavy line around line 17-- This is notifying you that there is a syntax error. You can hover over the wavy line to see more information.  
 
     .. image:: /_static/tenantt.jpg
+   
+   You **must** save the file before Visual Studio Code will show you a syntax error.
 
 #. For a full declaration, it is easier to view the Problems (navigate to View->Problems). 
 
     .. image:: /_static/view_problems.jpg
 
-#. Let's correct the JSON syntax error by correcting the typo from 'Tenantt' to 'Tenant'.
+#. Correct the JSON syntax error by correcting the typo from ``Tenantt`` to ``Tenant``.
 
     .. image:: /_static/tenant.jpg
 
-#. Using Schema Validation can be very useful when creating AS3 JSON declarations. It can help check the accuracy of a declaration before deployment for existing declarations. It can also be used as a powerful tool while composing your declarations---it can suggest valid options for a property in a declaration and inform you of required values. 
+#. Using Schema Validation can be very useful when creating AS3 JSON declarations. It can help check the accuracy of a declaration before deployment for existing declarations. It can also be used as a powerful tool while composing your declarations.  It can suggest valid options for a property in a declaration and inform you of required values. 
 
     .. image:: /_static/schema1.jpg
     .. image:: /_static/schema2.jpg
