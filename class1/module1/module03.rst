@@ -2,7 +2,11 @@ Lab 2 - Creating an HTTPS application with SSL Offload or SSL Bridging
 ----------------------------------------------------------------------
 
 #. In this section we will start by building out a basic HTTPS application with SSL Offload.
-#. In Postman expand the section for Lab3.
+
+#. In Postman expand the section for Lab2.
+
+#. Open the ``BIG-IP: Authenticate`` declaration, and click ``Send`` to refresh the token used for authentication.
+
 #. Open the ``BIG-IP: Basic HTTPS Load Balancing`` option and click on the ``Body`` section of the POST Request.
    The body will look like the following:
 
@@ -69,7 +73,9 @@ Lab 2 - Creating an HTTPS application with SSL Offload or SSL Bridging
           }
         }
  
-#. Click on send.  Look at the results of the POST and make sure you recieve a result of 200.       
+#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200.       
+
+ .. image:: /_static/Postman200OK_HTTPS_Highlighted.JPG
 
 #. In many environments it is required to perform TLS (SSL) from beginning to end of the communication path.  In this example we will perform SSL Bridging by adding a ServerSSL Profile.
 
@@ -142,3 +148,5 @@ Lab 2 - Creating an HTTPS application with SSL Offload or SSL Bridging
             }
         }
         }
+
+#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200. 
