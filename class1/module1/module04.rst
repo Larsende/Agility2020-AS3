@@ -6,6 +6,7 @@ This lab will be broken down to 3 parts.
 #. We will apply an already existing WAF policy to an HTTPS virtual server.
 #. We will apply an policy that is stored in a source repository to an HTTPS virtual server.
 #. We will update the policy to be in blocking mode.
+#. We will delete our application configurations.
 
 
 Already Existing WAF policy deployment
@@ -266,3 +267,13 @@ Setting WAF policy to Blocking mode:
 
   ..image:: /_static/lab3-blocking.png
 
+Delete the Applications deployed
+--------------------------------
+
+#. This time we will delete all the AS3 declarations that are currently deployed on the boxes. 
+
+#. In Postman open the ``Getting Started`` section.
+
+#. Select the ``BIG-IP: Delete ALL declarations`` job and look at the Body of the declaration.
+
+#. In this instance we are setting the Action to ``remove``.  Also notice that we set a ``syncToGroup`` option in order to cause the HA pair to sync configurations.
