@@ -394,7 +394,9 @@ Lines 11-257 defines the schema for the application template.
 
 #. Click the blue ``Send`` button. Ensure that you receive a 200 OK response. 
 
-#. To view the template we just uploaded, navigate to Chrome, BIG-IQ bookmark 10.1.1.7 (username = admin: password = admin), Applications, Application Templates.
+#. To view the template we just uploaded, navigate to Chrome, BIG-IQ bookmark 10.1.1.7 (username = admin, password = admin).
+
+#. On BIG-IQ, navigate to ``Applications``, ``Application Templates``.
     .. image:: /_static/bigiq_2.jpg
 
 #. Now that your template has been uploaded, select the radial next to the template and click the ``Publish`` button.
@@ -481,15 +483,15 @@ Notice the changed IP address:
 
 #. Click the blue ``Send`` button. Ensure that you receive a 200 OK response. 
 
-#. This application is now deleted from the BIG-IP (10.1.1.4).
+#. This application is now deleted from BIG-IQ and BIG-IP (10.1.1.4).
 
 #. Finally, delete the application template from the BIG-IQ. 
 Open the ``GET HTTP Application Template`` request and click the blue ``Send`` button. 
-Copy the id from the Body of the response.
+Copy the ``id`` from the Body of the response.
 
     .. image:: /_static/bigiq_3.jpg
 
-#. Paste the id to the URL of request ``DELETE HTTP Application Template``.
+#. Paste the ``id`` to the URL of request ``DELETE HTTP Application Template``.
 
 #. Click the blue ``Send`` button. Ensure that you receive a 200 OK response. 
 
