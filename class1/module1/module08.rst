@@ -103,7 +103,7 @@ Lines 12-40 build an http application we have in past sections in this lab.
 
 #. Send the ``Get Application Reference`` request to set the variable ``_bigiq_app_ref``.  Look at the ``Tests`` window for the declaration to see the variable being set, whcih will be used in the following step.
 
-   .. image:: /_static/biq_variable.JPG
+   .. image:: /_static/big_variable.JPG
 
 #. Open the ``Move out of Unknown App`` request.
 
