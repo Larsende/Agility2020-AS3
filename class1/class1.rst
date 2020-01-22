@@ -1,7 +1,7 @@
 Application Deployments with BIG-IP and Application Services (AS3)
 ==================================================================
 
-This class provides hands-on experience using F5's AS3 declarative interface for configuration of a BIG-IP.
+This class provides hands-on experience using F5``'``s AS3 declarative interface for configuration of a BIG-IP.
 
 The class will cover the following topics in the labs that follow:
 
