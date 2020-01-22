@@ -83,7 +83,15 @@ Already Existing WAF policy deployment
         }
         }
         
-#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200. 
+#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200.
+
+#. Look at the BIG-IP configuration and select Local Traffic and Virtual Servers.  Select the ``Sample_04`` partition.  
+
+#. Select the serviceMain virtual server and then go to the Security tab and see the test-policy applied to the virtual server.
+
+  ..image:: /_static/lab3-waf-onbox.png 
+
+#. You can also open a tab and browse to ``https://10.1.20.103``.  We have now deployed the hackazon application with a WAF policy in learning mode.
 
 WAF policy in source repository
 -------------------------------
@@ -92,7 +100,7 @@ WAF policy in source repository
 
 #. Select the Lab3, ``HTTPS with external WAF policy`` request, and look at the ``Body``. Notice the Policy at the bottom and the policyWAF referencing it, with the URL for the WAF Policy file:
 
-The body of the post will be as follows:
+   The body of the post will be as follows:
 
     .. code-block:: json
         :linenos:
@@ -169,14 +177,14 @@ The body of the post will be as follows:
         
 #. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200. 
 
-If you go to /Security/Application Security/Security Policies and then select the Sample_04 partition you will notice there are two security policies.  One in the Common partition and one in the Sample_04 partition.  The Sample_04 instance is named My_AWAF_Policy.
+   If you go to /Security/Application Security/Security Policies and then select the Sample_04 partition you will notice there are two security policies.  One in the Common partition and one in the Sample_04 partition.  The Sample_04 instance is named My_AWAF_Policy.
 
 Setting WAF policy to Blocking mode:
 ------------------------------------
 
 #. Select the Lab3, ``BIG-IP: HTTPS with external WAF policy in blocking mode``, and look at the ``Body``.
 
-In order to set blocking mode we can override what is defined in the Policy with an additional enforcementMode option in our WAF Policy declaration:
+   In order to set blocking mode we can override what is defined in the Policy with an additional enforcementMode option in our WAF Policy declaration:
 
     .. code-block:: json
         :linenos:
@@ -252,5 +260,9 @@ In order to set blocking mode we can override what is defined in the Policy with
         }
         }
        
-#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200. 
+#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200.
+
+#. Now go to the BIG-IP configuration and look at the Security Policies.  Select the ``My_AWAF_Policy`` and look at the Enforcement Mode.
+
+  ..image:: /_static/lab3-blocking.png
 
