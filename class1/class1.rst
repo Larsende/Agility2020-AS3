@@ -18,7 +18,7 @@ The class will cover the following topics in the labs that follow:
 We will be using a jumpbox to connect to the lab environment.  Click on the lab link given out during class and select the RDP option to connect to the lab box.
 
 Expected time to complete: **1 hour**
-
+ 
 
 We will be using a jumpbox to connect to the lab environment.  Click on the lab link given out during class and select the RDP option to connect to the lab box.
 
