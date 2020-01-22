@@ -1,5 +1,8 @@
 Lab 2 - Creating an HTTPS application with SSL Offload or SSL Bridging
-----------------------------------------------------------------------
+======================================================================
+
+HTTPS application with SSL Offload
+----------------------------------
 
 #. In this section we will start by building out a basic HTTPS application with SSL Offload.
 
@@ -77,6 +80,19 @@ Lab 2 - Creating an HTTPS application with SSL Offload or SSL Bridging
 
  .. image:: /_static/Postman200OK_HTTPS_Highlighted.JPG
 
+#. Next open Chrome web browser and login to Bigip-01 with user: ``admin`` and password: ``admin``.
+
+#. Expand Local Traffic and then Virtual Servers.  In the Partition expand Sample_02.  You should see the following:
+
+  .. image:: /_static/lab2-verify.png
+
+#. In a new tab open ``http://10.1.20.101``.  This will automatically redirect to SSL and throw a certificate error since our cert doesn't match the hostname used.
+
+#. Click through ignoring the certificate error and the application is working.
+
+HTTPS Application with SSL Bridging
+-----------------------------------
+
 #. In many environments it is required to perform TLS (SSL) from beginning to end of the communication path.  In this example we will perform SSL Bridging by adding a ServerSSL Profile.
 
 #. In Postman select the Lab2, ``HTTPS with Serverssl profile``.  Notice in the body that we have added a ``clientTLS`` option.  Why is a serverssl profile applied as a clientTLS option?
@@ -150,3 +166,15 @@ Lab 2 - Creating an HTTPS application with SSL Offload or SSL Bridging
         }
 
 #. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200. 
+
+#. Verify that the configuration is on the F5.  Select the partition Sample_03 and notice the new virtual servers:
+
+  .. image:: /_static/lab2-verify2.png
+
+#. Click on the ``serviceMain`` virtual server and notice in the SSL section that we have both a ClientSSL profile and a ServerSSL profile applied:
+
+  .. image:: /_static/lab2-serverssl.png
+
+#. In your browser now go to ``http://10.1.20.102``.
+
+#. Do you notice in your declaration what the persistence settings are?  If you refresh do you end up rotating through the two web servers or do you stay on one?
