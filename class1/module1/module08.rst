@@ -38,11 +38,11 @@ If the error ``Cannot find any ADC root nodes for the target devices`` occurs, f
 
 #. Open the ``Deploy App w/o Template`` request.
 
-#. Click on the ``Body`` section of the POST Request.
-The body will look like the following:
+#. Click on the ``Body`` section of the POST Request. The body will look like the following
 
     .. code-block:: json
         :linenos:
+
         {
             "class": "AS3",
             "declaration": {
@@ -125,6 +125,7 @@ The body will look like the following:
 
     .. code-block:: json
         :linenos:
+
         {
             "description": "For load balancing an HTTP application on port 80.",
             "name": "AS3-F5-HTTP-lb-template-big-iq-default-v1",
@@ -391,14 +392,15 @@ The body will look like the following:
 
 #. On BIG-IQ, navigate to ``Applications``, ``Application Templates``.
 
-    .. image:: /_static/bigiq_2v2.jpg
+    .. image:: /_static/bigiq_2.jpg
 
 #. Open the ``Create App2 with Template`` request.
 
-#. Click on the ``Body`` section of the POST Request.The body will look like the following
+#. Click on the ``Body`` section of the POST Request. The body will look like the following
 
     .. code-block:: json
         :linenos:
+
         {
             "class": "AS3",
             "declaration": {
@@ -426,7 +428,7 @@ The body will look like the following:
             }
         }
 
-#. Looking further into this request. Line 13 defines the schema that we are going to use: ``AS3-F5-HTTP-lb-template-big-iq-default-v1``.
+#. Looking further into this request. Line 13 defines the schema that we are going to use ``AS3-F5-HTTP-lb-template-big-iq-default-v1``.
 
 #. Click the blue ``Send`` button. Ensure that you receive a 200 OK response. 
 
@@ -437,6 +439,8 @@ The body will look like the following:
 #. Click on the ``Body`` section of the POST Request. Notice the changed IP address
 
     .. code-block:: json
+        :linenos:
+        
         {
             "class": "AS3",
             "action": "patch",
