@@ -11,10 +11,9 @@ If the error ``Cannot find any ADC root nodes for the target devices`` occurs, f
 
 **Exercise 1 - Authenticate to the BIG-IQ**
 
-#. Open the ``Authenticate to BIG-IQ`` request. Note that tokens need to be refreshed after 15 minutes. 401 Errors will occur if the token is bad or old. Resending this request will refresh the token.
+#. Open the ``Authenticate to BIG-IQ`` request. Note that tokens need to be refreshed after 5 minutes. 401 Errors will occur if the token is bad or old. Resending this request will refresh the token.
 
-#. Click on the ``Body`` section of the POST Request.
-The body will look like the following:
+#. Click on the ``Body`` section of the POST Request. The body will look like the following
 
     .. code-block:: json
         :linenos:
@@ -85,10 +84,7 @@ The body will look like the following:
             }
         }
         
-#. Looking further into this request:. 
-The URI is sent to the IP address of BIG-IQ instead of the BIG-IP address per past requests.
-Lines 9-11 target the BIG-IP we would like to build this application on.
-Lines 12-40 build an http application we have in past sections in this lab.
+#. Looking further into this request, the URI is sent to the IP address of BIG-IQ instead of the BIG-IP address per past requests. Lines 9-11 target the BIG-IP we would like to build this application on. Lines 12-40 build an http application we have in past sections in this lab.
 
 #. Click the blue ``Send`` button. Ensure that you receive a 200 OK response. 
 
@@ -97,6 +93,7 @@ Lines 12-40 build an http application we have in past sections in this lab.
 #. Navigate to Chrome, BIG-IQ bookmark 10.1.1.7 (username = admin, password = admin).
 
 #. On BIG-IQ, navigate to ``Applications``, ``Applications`` screen to view the deployed application.
+
     .. image:: /_static/bigiq_1.jpg
 
 #. Now we will move our applciations from ``Unknown Applications`` to another tile named ``Known Applications``.
@@ -122,18 +119,16 @@ Lines 12-40 build an http application we have in past sections in this lab.
 
 **Exercise 3 - Deploy, Change and Delete Apps via App Templates on BIG-IQ**
 
-#. Open the ``Upload App Template to BIG-IQ`` request. 
-Note that this this request was taken from https://github.com/f5devcentral/f5-big-iq.
+#. Open the ``Upload App Template to BIG-IQ`` request. Note that this this request was taken from https://github.com/f5devcentral/f5-big-iq.
 
-#. Click on the ``Body`` section of the POST Request.
-The body will look like the following:
+#. Click on the ``Body`` section of the POST Request. The body will look like the following
 
     .. code-block:: json
         :linenos:
         {
             "description": "For load balancing an HTTP application on port 80.",
             "name": "AS3-F5-HTTP-lb-template-big-iq-default-v1",
-            "published": false,
+            "published": true,
             "isUICompatible": true,
             "tenant": {
                 "name": "",
@@ -388,23 +383,19 @@ The body will look like the following:
             }
         }
 
-#. Looking further into this request:. 
-Lines 3 names the application template.
-Lines 11-257 defines the schema for the application template.
+#. Looking further into this request Lines 3 names the application template. Line 4 marks the application template as published. Lines 11-257 defines the schema for the application template.
 
 #. Click the blue ``Send`` button. Ensure that you receive a 200 OK response. 
 
 #. To view the template we just uploaded, navigate to Chrome, BIG-IQ bookmark 10.1.1.7 (username = admin, password = admin).
 
 #. On BIG-IQ, navigate to ``Applications``, ``Application Templates``.
-    .. image:: /_static/bigiq_2.jpg
 
-#. Now that your template has been uploaded, select the radial next to the template and click the ``Publish`` button.
+    .. image:: /_static/bigiq_2v2.jpg
 
 #. Open the ``Create App2 with Template`` request.
 
-#. Click on the ``Body`` section of the POST Request.
-The body will look like the following:
+#. Click on the ``Body`` section of the POST Request.The body will look like the following
 
     .. code-block:: json
         :linenos:
@@ -435,8 +426,7 @@ The body will look like the following:
             }
         }
 
-#. Looking further into this request:. 
-Line 13 defines the schema that we are going to use: ``AS3-F5-HTTP-lb-template-big-iq-default-v1``.
+#. Looking further into this request. Line 13 defines the schema that we are going to use: ``AS3-F5-HTTP-lb-template-big-iq-default-v1``.
 
 #. Click the blue ``Send`` button. Ensure that you receive a 200 OK response. 
 
@@ -444,8 +434,8 @@ Line 13 defines the schema that we are going to use: ``AS3-F5-HTTP-lb-template-b
 
 #. Now we will change this application. Open the ``Change App2`` request.
 
-#. Click on the ``Body`` section of the POST Request. 
-Notice the changed IP address:
+#. Click on the ``Body`` section of the POST Request. Notice the changed IP address
+
     .. code-block:: json
         {
             "class": "AS3",
@@ -485,9 +475,7 @@ Notice the changed IP address:
 
 #. This application is now deleted from BIG-IQ and BIG-IP (10.1.1.4).
 
-#. Finally, delete the application template from the BIG-IQ. 
-Open the ``GET HTTP Application Template`` request and click the blue ``Send`` button. 
-Copy the ``id`` from the Body of the response.
+#. Finally, delete the application template from the BIG-IQ. Open the ``GET HTTP Application Template`` request and click the blue ``Send`` button. Copy the ``id`` from the Body of the response.
 
     .. image:: /_static/bigiq_3.jpg
 
@@ -495,8 +483,7 @@ Copy the ``id`` from the Body of the response.
 
 #. Click the blue ``Send`` button. Ensure that you receive a 200 OK response. 
 
-#. Navigate to Chrome, BIG-IQ bookmark 10.1.1.7 (username = admin: password = admin), Applications, Application Templates.
-The template is now deleted from the available templates.
+#. Navigate to Chrome, BIG-IQ bookmark 10.1.1.7 (username = admin: password = admin), Applications, Application Templates. The template is now deleted from the available templates.
 
 
 
