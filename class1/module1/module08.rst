@@ -94,12 +94,16 @@ Lines 12-40 build an http application we have in past sections in this lab.
 
 #. This application is now in the ``Demo Service`` partition on the BIG-IP (10.1.1.4).
 
-#. Navigate to Chrome, BIG-IQ bookmark 10.1.1.7 (username = admin: password = admin), Applications, Applications.
+#. Navigate to Chrome, BIG-IQ bookmark 10.1.1.7 (username = admin, password = admin).
+
+#. On BIG-IQ, navigate to ``Applications``, ``Applications`` screen to view the deployed application.
     .. image:: /_static/bigiq_1.jpg
 
 #. Now we will move our applciations from ``Unknown Applications`` to another tile named ``Known Applications``.
 
-#. Send the ``Get Application Reference`` request to set the variable _bigiq_app_ref.
+#. Send the ``Get Application Reference`` request to set the variable ``_bigiq_app_ref``.  Look at the ``Tests`` window for the declaration to see the variable being set, whcih will be used in the following step.
+
+   .. image:: /_static/biq_variable.JPG
 
 #. Open the ``Move out of Unknown App`` request.
 
@@ -111,7 +115,7 @@ Lines 12-40 build an http application we have in past sections in this lab.
 
 #. Click the blue ``Send`` button. Ensure that you receive a 200 OK response. 
 
-#. This application is now deleted from the BIG-IP (10.1.1.4).
+#. This application is now deleted from BIG-IQ and BIG-IP (10.1.1.4).
 
 
 
