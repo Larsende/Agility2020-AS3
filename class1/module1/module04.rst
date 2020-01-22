@@ -90,7 +90,7 @@ Already Existing WAF policy deployment
 
 #. Select the serviceMain virtual server and then go to the Security tab and see the test-policy applied to the virtual server.
 
-  image:: /_static/lab3-waf-onbox.png 
+   .. image:: /_static/lab3-waf-onbox.png 
 
 #. You can also open a tab and browse to ``https://10.1.20.103``.  We have now deployed the hackazon application with a WAF policy in learning mode.
 
@@ -265,7 +265,7 @@ Setting WAF policy to Blocking mode:
 
 #. Now go to the BIG-IP configuration and look at the Security Policies.  Select the ``My_AWAF_Policy`` and look at the Enforcement Mode.
 
-  image:: /_static/lab3-blocking.png
+   .. image:: /_static/lab3-blocking.png
 
 Delete the Applications deployed
 --------------------------------
