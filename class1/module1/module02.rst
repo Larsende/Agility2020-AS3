@@ -6,7 +6,7 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 
 #. Expand the AS3 collections folder that we imported by clicking on it.
 
-#. Open the ``Lab`` folder.
+#. Open the ``Lab 1`` folder.
 
 #. For the lab, we will be using token-based authentication via HTTP/HTTPS to the BIG-IP API by sending requests to the BIG-IP and including a valid BIG-IP authentication token in the ``X-F5-Auth-Token`` header.
 
@@ -19,7 +19,7 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 
 #. We will send a GET request to our BIG-IP to see information about the AS3 software package that was previously installed.
 
-#. Locate the ``AS3 Info`` request and double click. Notice that we are sending a GET request to an API endpoint with an empty body. Click the blue **Send** button, and ensure you get a 200 OK response.
+#. Locate the ``GET AS3 Info`` request and double click. Notice that we are sending a GET request to an API endpoint with an empty body. Click the blue **Send** button, and ensure you get a 200 OK response.
 
 #. Locate the ``HTTP Application`` request in the same folder. Notice that we are sending a POST request to an API endpoint. To examine the body of our request, click the ``Body`` tab.
 
@@ -126,7 +126,7 @@ In this lab, we will create a simple HTTP application using AS3. Before sending 
 
 #. Since AS3 is declarative, it will notice that we are sending a POST with an empty tenant body, and by default AS3 will delete the existing virtual server, pool and pool members.
 
-#. In Postman, find the 'Delete Application' declaration. Examine the URI and Body declaration. Notice we are sending a POST to the same API endpoint, but take a close look at the JSON body.
+#. In Postman, find the ``Delete Application`` declaration. Examine the URI and Body declaration. Notice we are sending a POST to the same API endpoint, but take a close look at the JSON body.
 
 #. The body declares a AS3 tenant called http_tenant, but the body describing the state of the tenant is empty. By default, AS3 will remove the virtual server, pool and pool members. **NOTE:** Since this would cause the entire tenant to be empty, AS3 will also remove the tenant for us.
 

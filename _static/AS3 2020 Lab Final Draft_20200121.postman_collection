@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "72d93e09-4c7a-47fc-a152-ae213939b32c",
+		"_postman_id": "3f508a25-e7e9-4189-b4c1-8fc0ed34cef3",
 		"name": "AS3 2020 Lab Final Draft",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -342,7 +342,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"class\": \"AS3\",\r\n\t\"action\": \"deploy\",\r\n\t\"persist\": true,\r\n\t\"syncToGroup\": \"/Common/failoverGroup\",\r\n\t\"declaration\": {\r\n\t\t\"class\": \"ADC\",\r\n\t\t\"id\": \"abcdefghi12345678\",\r\n\t\t\"schemaVersion\": \"3.10.0\",\r\n\t\t\"controls\": {\r\n    \t\t\"trace\": true\r\n    \t},\r\n\t\t\r\n\t\t\"http_tenant\": {\r\n\t\t\t\"class\": \"Tenant\",\r\n\t\t\t\r\n\t\t\t\"http_app\": {\r\n\t\t\t\t\"class\": \"Application\",\r\n\t\t\t\t\"template\": \"generic\",\r\n\r\n\r\n\t\t\t\t\"http_vs\": {\r\n\t\t\t\t\t\"class\": \"Service_Generic\",\r\n\t\t\t\t\t\"virtualPort\": 80,\r\n\t\t\t\t\t\"virtualAddresses\": [\r\n\t\t\t\t\t\t\"10.1.20.10\"\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"pool\": \"http_pool\",\r\n\t\t\t\t\t\"profileHTTP\": {\"use\": \"http\"}\r\n\t\t\t\t},\r\n\t\t\t\t\"http_pool\": {\r\n\t\t\t\t\t\"class\": \"Pool\",\r\n\t\t\t\t\t\"monitors\": [\r\n\t\t\t\t\t\t\"tcp\"\t\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"members\":[\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\"servicePort\": 80,\r\n\t\t\t\t\t\t\t\"serverAddresses\": \r\n\t\t\t\t\t\t\t[\r\n\t\t\t\t\t\t\t\t\"10.1.10.30\",\r\n\t\t\t\t\t\t\t\t\"10.1.10.31\"\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t]\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t]\r\n\t\t\t\t}\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
+							"raw": "{\r\n\t\"class\": \"AS3\",\r\n\t\"action\": \"deploy\",\r\n\t\"persist\": true,\r\n\t\"syncToGroup\": \"/Common/failoverGroup\",\r\n\t\"declaration\": {\r\n\t\t\"class\": \"ADC\",\r\n\t\t\"id\": \"abcdefghi12345678\",\r\n\t\t\"schemaVersion\": \"3.10.0\",\r\n\t\t\"controls\": {\r\n    \t\t\"trace\": true\r\n    \t},\r\n\t\t\r\n\t\t\"http_tenant\": {\r\n\t\t\t\"class\": \"Tenant\",\r\n\t\t\t\r\n\t\t\t\"http_app\": {\r\n\t\t\t\t\"class\": \"Application\",\r\n\t\t\t\t\"template\": \"generic\",\r\n\r\n\r\n\t\t\t\t\"http_vs\": {\r\n\t\t\t\t\t\"class\": \"Service_Generic\",\r\n\t\t\t\t\t\"virtualPort\": 80,\r\n\t\t\t\t\t\"virtualAddresses\": [\r\n\t\t\t\t\t\t\"10.1.20.10\"\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"pool\": \"http_pool\",\r\n\t\t\t\t\t\"profileHTTP\": {\"use\": \"http\"}\r\n\t\t\t\t},\r\n\t\t\t\t\"http_pool\": {\r\n\t\t\t\t\t\"class\": \"Pool\",\r\n\t\t\t\t\t\"monitors\": [\r\n\t\t\t\t\t\t\"tcp\"\t\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"members\":[\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\"servicePort\": 80,\r\n\t\t\t\t\t\t\t\"serverAddresses\": \r\n\t\t\t\t\t\t\t[\r\n\t\t\t\t\t\t\t\t\"10.1.10.30\"\r\n\t\t\t\t\t\t\t]\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t]\r\n\t\t\t\t}\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"
 						},
 						"url": {
 							"raw": "https://{{bigip_server}}/mgmt/shared/appsvcs/declare",
@@ -1638,121 +1638,121 @@
 	],
 	"variable": [
 		{
-			"id": "42b7fef0-4264-486b-9b00-1f753636c89f",
+			"id": "a7499595-cea8-4eff-9441-c6fe0d7fb460",
 			"key": "bigip_server",
 			"value": "10.1.1.4",
 			"type": "string"
 		},
 		{
-			"id": "79810e9b-b2a9-4797-beb1-ca1bd18236fd",
+			"id": "16fd62b0-f8ec-4cc4-b977-e7fefa2d54d5",
 			"key": "bigip_user",
 			"value": "admin",
 			"type": "string"
 		},
 		{
-			"id": "add343c6-7c98-457b-8ea4-a6c26a3d440b",
+			"id": "b490cc4a-f391-4b96-b591-b384b32166a5",
 			"key": "bigip_passwd",
 			"value": "admin",
 			"type": "string"
 		},
 		{
-			"id": "1cca87e2-22e7-43e6-bb18-ce251a872566",
+			"id": "33fe8a55-47ba-4349-9966-50f0c6f3fc9b",
 			"key": "_bigip_token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9bcad94f-d214-47d2-9cd7-810d5cf96d45",
+			"id": "60cb4628-38cf-4eab-8a8e-01e93ff69ac8",
 			"key": "_bigip_refresh_token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8c771e57-8afc-4507-b973-191bd3715357",
+			"id": "133b2182-85c6-4c36-8845-5fb38fbe513f",
 			"key": "bigiq_server",
 			"value": "10.1.1.7",
 			"type": "string"
 		},
 		{
-			"id": "334f6907-b4a9-475e-8d01-3bf8d1c6a68a",
+			"id": "09d831eb-273f-4e10-8186-0f980ad033e3",
 			"key": "bigiq_user",
 			"value": "admin",
 			"type": "string"
 		},
 		{
-			"id": "e258328d-b5e2-4c87-8d54-3b5997b308f8",
+			"id": "ad73375e-db26-4942-9e78-9e86c4622caa",
 			"key": "bigiq_passwd",
 			"value": "admin",
 			"type": "string"
 		},
 		{
-			"id": "837727ba-2f30-4396-9b13-350487e0afd7",
+			"id": "50d7cdc5-dcd2-4b38-9980-1451b20653a3",
 			"key": "_bigiq_token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dfdc7a63-1a2a-48b0-be8d-99f748cc0958",
+			"id": "580204e0-27a1-4977-a753-b6df27e1b6bc",
 			"key": "_bigiq_refresh_token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7811d9e3-f514-49af-8e4e-9529dd907178",
+			"id": "e2763063-8f1c-4b6d-9ebf-2bf8af886023",
 			"key": "_bigiq_app_ref",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e056014b-dc40-408a-8e1c-83c7b49dbcab",
+			"id": "6521e69a-e32b-475f-9375-6837bb678449",
 			"key": "retryCounter",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "63b16ea7-ac7f-437b-ae29-2b8dd67129e8",
+			"id": "f7dd08c1-6246-44c4-9ac6-84a670e9b134",
 			"key": "doVersion",
 			"value": "v1.9.0",
 			"type": "string"
 		},
 		{
-			"id": "e2ddb94b-ca52-4dea-9acc-c7b21272d9fd",
+			"id": "f3955c87-d9ab-4b84-907b-3fcceed32797",
 			"key": "doFilename",
 			"value": "f5-declarative-onboarding-1.9.0-1.noarch.rpm",
 			"type": "string"
 		},
 		{
-			"id": "99890f06-be54-4773-8892-6fecf10b824e",
+			"id": "38894452-19d6-46cb-90ba-13d8edbccb84",
 			"key": "do_installation_status_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5e0e74f0-fa11-4141-8a47-430ed2890031",
+			"id": "4c875097-5e6f-4252-9b56-b540147f06a0",
 			"key": "do_onboard_status_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8f6cf4b5-a081-4d87-8b7e-4d50e84f9f92",
+			"id": "14a8d52c-7c69-4548-9826-31c719e3e7d1",
 			"key": "as3Version",
 			"value": "v3.16.0",
 			"type": "string"
 		},
 		{
-			"id": "23455934-786a-4b45-9364-83f493474036",
+			"id": "dcc5166b-7dcb-4bfd-a4df-193ef6fd80aa",
 			"key": "as3Filename",
 			"value": "f5-appsvcs-3.16.0-6.noarch.rpm",
 			"type": "string"
 		},
 		{
-			"id": "7b19b676-ee2c-4f51-bbc7-a2edee180a9d",
+			"id": "94eb87dd-fa70-4ba3-a847-f54b3855cee9",
 			"key": "as3_status_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7827619d-4e4f-4b7a-8bc8-e1e7ae06614c",
+			"id": "2febb9eb-7be8-4564-87ea-4afc7eaa4f2e",
 			"key": "as3_installation_status_id",
 			"value": "",
 			"type": "string"

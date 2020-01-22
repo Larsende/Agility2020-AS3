@@ -74,7 +74,7 @@ In order to complete this lab, you will connect to a Windows jump host, and you 
 
     .. image:: /_static/postman.jpg
 
-#. Once Postman has launched, you need load the Postman environment variables and import the collections we will be using for the lab.
+#. Once Postman has launched, you need to load the Postman environment variables and import the collections we will be using for the lab.
 
 #. First, import the Postman collection, which are located on a github repository. On the top left, click the ``Import`` button.
 
