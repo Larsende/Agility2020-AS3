@@ -178,3 +178,7 @@ HTTPS Application with SSL Bridging
 #. In your browser now go to ``http://10.1.20.102``.
 
 #. Do you notice in your declaration what the persistence settings are?  If you refresh do you end up rotating through the two web servers or do you stay on one?
+
+   You are actually experiencing part of what the AS3 Service_HTTPS template does by default.  The Service_HTTPS class has some default values that you can modify, but if you do not modify them they will automatically set.  Cookie Persistence is the default persistence value for the Service_HTTPS class.
+
+   You can see the default values here:  https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/userguide/examples.html#example-2-https-application 

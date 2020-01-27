@@ -180,6 +180,8 @@ WAF policy in source repository
 
    If you go to /Security/Application Security/Security Policies and then select the Sample_04 partition you will notice there are two security policies.  One in the Common partition and one in the Sample_04 partition.  The Sample_04 instance is named My_AWAF_Policy.
 
+   Also notice in the Virtual Server Security settings that the new ``My_AWAF_Policy`` is applied to the ``serviceMain`` virtual server instead of the test-policy.
+
 Setting WAF policy to Blocking mode:
 ------------------------------------
 
