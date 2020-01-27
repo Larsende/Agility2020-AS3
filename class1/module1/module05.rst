@@ -57,7 +57,7 @@ In this lab, we will create two simple HTTP application using AS3 within the sam
 
     .. image:: /_static/200.jpg
 
-#. Confirm the changes on the BIG-IP. On the left column, navigate to **Local Traffic-->Virtual Servers** and change the **partition** to **'http_tenant'**. 
+#. Confirm the changes on the BIG-IP. On the left column, navigate to **Local Traffic --> Virtual Servers** and change the **partition** to **http_tenant**. 
 
 #. You should see the list of 3 virtual servers. 
 
