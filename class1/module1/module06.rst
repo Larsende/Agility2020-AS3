@@ -43,7 +43,7 @@ In this lab, you will work with multiple tenants on a single BIG-IP platform.
 
 #. Verify that you received a ``HTTP 200 OK`` response.
 
-#. Open the declaration ``Tentant 1: HTTP Multi-Applications (2 Apps) - ShareNodes``.
+#. Open the declaration ``Tenant 1: HTTP Multi-Applications (2 Apps) - ShareNodes``.
 
 #. Scroll down the declaration to see the ``ShareNodes`` option set to ``true``.  The default setting for this is ``false``.
 
