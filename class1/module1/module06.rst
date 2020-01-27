@@ -11,7 +11,6 @@ In this lab, you will work with multiple tenants on a single BIG-IP platform.
 #. Click and examine the ``BIG-IP Authenticate`` declaration. Click ``Send`` and ensure a 200 OK response in the Postman response window. 
     .. image:: /_static/Postname200OK_Highlighted.JPG
 
-
 #. Locate the ``Tenant 1: HTTP Multi-Applications (2 Apps)`` request in the same folder.  If you look at the ``Body`` of the request, you will see a declaration to create 2 applications in the tenant named ``http_tenant``.
 
 #. Click ``Send`` to send the declaration to the BIG-IP.
@@ -27,7 +26,7 @@ In this lab, you will work with multiple tenants on a single BIG-IP platform.
 #. If you login to the BIG-IP, you will see the applications deployed in the ``http_tenant`` partition.
 
 
-**Exercise 2 - Deploy Application for Second Tenant **
+**Exercise 2 - Deploy Application for Second Tenant**
 
 #. Locate the ``Tenant 2: HTTP Application`` request in the same folder.  If you look at the ``Body`` of the request, you will see a declaration to create an application in the tenant named ``http_tenant_2``.
 
