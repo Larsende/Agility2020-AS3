@@ -39,7 +39,7 @@ In this lab, you will work with multiple tenants on a single BIG-IP platform.
 
 #. In order to use the same pool members in the second tenant, you must use the ``ShareNodes`` option in the pool declaration.
 
-#. Open the declaration ``BIG-IP: Delete first tenant's declarations`` in order to delete the applications for tenant `http_tenant``.
+#. Open the declaration ``BIG-IP: Delete first tenants declarations`` in order to delete the applications for tenant `http_tenant``.
 
 #. Click ``Send`` to delete the applications.
 
