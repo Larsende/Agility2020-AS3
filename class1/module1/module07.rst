@@ -1,4 +1,4 @@
-Lab 8 - Creating a Applications using AS3 Declarative Interface & BIG-IQ
+Lab 6 - Creating a Applications using AS3 Declarative Interface & BIG-IQ
 --------------------------------------------------------------------------------------------------
 In this lab, we will create a simple HTTP application using AS3. 
 
