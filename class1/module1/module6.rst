@@ -33,7 +33,7 @@ In this lab, you will work with multiple tenants on a single BIG-IP platform.
 
 #. Click ``Send`` to send the declaration to the BIG-IP.
 
-#. You should receive an error `422 Unprocessable Entity`.  The reason you received this error is that the second tenant is attemping to use the same pool member IP addresses in the declaration.
+#. You should receive an error ``422 Unprocessable Entity``.  The reason you received this error is that the second tenant is attemping to use the same pool member IP addresses in the declaration.
 
   .. image:: /_static/Postman_Tenant2_Error.JPG
 
