@@ -7,7 +7,7 @@ Welcome to the Application Deployments with BIG-IP and Application Services (AS3
 .. toctree::
    :maxdepth: 2
    :includehidden:
-   :caption:
+   :caption: Contents:
    :glob:
 
    class*/class*
