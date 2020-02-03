@@ -83,7 +83,7 @@ In order to complete this lab, you will connect to a Windows jump host, and you 
 #. Select ``Import From Link`` and paste the link into the text box, ``https://raw.githubusercontent.com/Larsende/Agility2020-AS3/master/_static/AS3%202020%20Lab%20Final%20Draft.postman_collection_20200127b``, then click ``Import``:
 
     .. image:: /_static/import_from_link.jpg
-    
+
 #. You should now see a new folder under the ``Collections`` tab to the left of the Postman application screen.
 
 #. Navigate to File -> Settings and confirm the ``SSL Certificate Verification`` option is turned OFF. If it is on, please turn it OFF. Once finished, exit the settings menu.

@@ -1,6 +1,6 @@
 Lab 6 - Creating a Applications using AS3 Declarative Interface & BIG-IQ
 --------------------------------------------------------------------------------------------------
-In this lab, we will create a simple HTTP application using AS3. 
+In this lab, we will create a simple HTTP application using AS3.
 
 Unless instructed, throughout this section we will be working in the ``BIG-IQ`` Collection in Postman. This folder holds 15 enclosed requests that we will work through.
 
@@ -65,7 +65,6 @@ If the error ``Cannot find any ADC root nodes for the target devices`` occurs, f
                                 "10.1.10.10"
                             ],
                             "pool": "web_pool"
-                            
                         },
                         "web_pool": {
                             "class": "Pool",

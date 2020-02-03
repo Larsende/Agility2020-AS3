@@ -83,14 +83,14 @@ Already Existing WAF policy deployment
             }
         }
         }
-        
+
 #. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200.
 
-#. Look at the BIG-IP configuration and select Local Traffic and Virtual Servers.  Select the ``Sample_04`` partition.  
+#. Look at the BIG-IP configuration and select Local Traffic and Virtual Servers.  Select the ``Sample_04`` partition.
 
 #. Select the serviceMain virtual server and then go to the Security tab and see the test-policy applied to the virtual server.
 
-   .. image:: /_static/lab3-waf-onbox.png 
+   .. image:: /_static/lab3-waf-onbox.png
 
 #. You can also open a tab and browse to ``https://10.1.20.103``.  We have now deployed the hackazon application with a WAF policy in learning mode.
 
@@ -175,8 +175,8 @@ WAF policy in source repository
             }
         }
         }
-        
-#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200. 
+
+#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200.
 
    If you go to /Security/Application Security/Security Policies and then select the Sample_04 partition you will notice there are two security policies.  One in the Common partition and one in the Sample_04 partition.  The Sample_04 instance is named My_AWAF_Policy.
 
@@ -258,15 +258,15 @@ Setting WAF policy to Blocking mode:
                     "ignoreChanges": false,
                     "enforcementMode": "blocking",
                     "serverTechnologies": [
-                    	"PHP",
-                    	"MySQL"
+                       "PHP",
+                       "MySQL"
                     ]
                 }
             }
             }
         }
         }
-       
+
 #. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200.
 
 #. Now go to the BIG-IP configuration and look at the Security Policies.  Select the ``My_AWAF_Policy`` and look at the Enforcement Mode.
@@ -276,7 +276,7 @@ Setting WAF policy to Blocking mode:
 Delete the Applications deployed
 --------------------------------
 
-#. This time we will delete all the AS3 declarations that are currently deployed on the boxes. 
+#. This time we will delete all the AS3 declarations that are currently deployed on the boxes.
 
 #. In Postman open the ``Getting Started`` section.
 

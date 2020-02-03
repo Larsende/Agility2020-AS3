@@ -4,7 +4,7 @@ In this lab, we will create two simple HTTP application using AS3 within the sam
 
 **Exercise 1 - Multi-App AS3 Declaration**
 
-#. Open Postman and locate the Lab 5 folder under collections on the left side of postman. Double-click the ``HTTP Multiple-Application`` file.
+#. Open Postman and locate the Lab 5 folder under collections on the left side of postman. Double-click the ``Tenant 1: HTTP Multi-Applications (2 Apps)`` file.
 
 #. Examine the body of the AS3 declaration. Take some time to familiarize yourself with how we are declaring two HTTP applications within the same tenant.
 
@@ -57,7 +57,7 @@ In this lab, we will create two simple HTTP application using AS3 within the sam
 
     .. image:: /_static/200.jpg
 
-#. Confirm the changes on the BIG-IP. On the left column, navigate to **Local Traffic --> Virtual Servers** and change the **partition** to **http_tenant**.
+#. Confirm the changes on the BIG-IP. On the left column, navigate to **Local Traffic --> Virtual Servers** and validate the **partition** is **http_tenant**.
 
 #. You should see the list of 3 virtual servers.
 

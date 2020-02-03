@@ -75,8 +75,8 @@ HTTPS application with SSL Offload
             }
           }
         }
- 
-#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200.       
+
+#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200.
 
  .. image:: /_static/Postman200OK_HTTPS_Highlighted.JPG
 
@@ -165,7 +165,7 @@ HTTPS Application with SSL Bridging
         }
         }
 
-#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200. 
+#. Click on ``Send``.  Look at the results of the POST and make sure you recieve a result of 200.
 
 #. Verify that the configuration is on the F5.  Select the partition Sample_03 and notice the new virtual servers:
 
@@ -181,4 +181,4 @@ HTTPS Application with SSL Bridging
 
    You are actually experiencing part of what the AS3 Service_HTTPS template does by default.  The Service_HTTPS class has some default values that you can modify, but if you do not modify them they will automatically set.  Cookie Persistence is the default persistence value for the Service_HTTPS class.
 
-   You can see the default values here:  https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/userguide/examples.html#example-2-https-application 
+   You can see the default values here:  https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/userguide/examples.html#example-2-https-application
