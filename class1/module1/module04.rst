@@ -256,7 +256,11 @@ Setting WAF policy to Blocking mode:
                     "class": "WAF_Policy",
                     "url": "https://raw.githubusercontent.com/Larsende/Agility2020-AS3/master/_static/Common_test_policy__2020-1-13_9-38-13__bigip02.as3lab.com.xml",
                     "ignoreChanges": false,
-                    "enforcementMode": "blocking"
+                    "enforcementMode": "blocking",
+                    "serverTechnologies": [
+                    	"PHP",
+                    	"MySQL"
+                    ]
                 }
             }
             }
