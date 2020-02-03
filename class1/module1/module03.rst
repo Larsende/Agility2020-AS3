@@ -42,7 +42,7 @@ HTTPS application with SSL Offload
                 },
                 "web_pool": {
                   "class": "Pool",
-                  "loadBalancingMode": "predictive-node",
+                  "loadBalancingMode": "round-robin",
                   "monitors": [
                    "http"
                   ],
@@ -50,8 +50,8 @@ HTTPS application with SSL Offload
                     "servicePort": 80,
                     "shareNodes": true,
                     "serverAddresses": [
-                      "10.1.10.31",
-                      "10.1.10.32"
+                      "10.1.10.33",
+                      "10.1.10.34"
                     ]
                   }]
                 },
@@ -95,7 +95,7 @@ HTTPS Application with SSL Bridging
 
 #. In many environments it is required to perform TLS (SSL) from beginning to end of the communication path.  In this example we will perform SSL Bridging by adding a ServerSSL Profile.
 
-#. In Postman select the Lab2, ``HTTPS with Serverssl profile``.  Notice in the body that we have added a ``clientTLS`` option.  Why is a serverssl profile applied as a clientTLS option?
+#. In Postman select the Lab2, ``BIG-IP: HTTPS with Serverssl profile``.  Notice in the body that we have added a ``clientTLS`` option.  Why is a serverssl profile applied as a clientTLS option?
 
    The body of the post will be as follows:
 
@@ -139,8 +139,8 @@ HTTPS Application with SSL Bridging
                     "servicePort": 443,
                     "shareNodes": true,
                     "serverAddresses": [
-                    "10.1.10.31",
-                    "10.1.10.32"
+                    "10.1.10.33",
+                    "10.1.10.34"
                     ]
                 }]
                 },
