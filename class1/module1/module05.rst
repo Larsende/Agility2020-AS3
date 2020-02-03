@@ -75,7 +75,7 @@ In this lab, we will create two simple HTTP application using AS3 within the sam
 
     .. image:: /_static/clear_tenant.jpg
 
-#. In Postman, find the ``Delete Application`` file. Examine the URI and body declaration. Notice we are sending a POST to the same API endpoint, but take a close look at the JSON body.
+#. In Postman, find the ``Delete Application`` request. Examine the URI and body declaration. Notice we are sending a POST to the same API endpoint, but take a close look at the JSON body.
 
 #. The body declares a AS3 tenant called ``http_tenant``, but the body describing the state of the tenant is empty. By default, AS3 will remove the virtual server, pool and pool members. Since this would cause the entire tenant to be empty, AS3 will also remove the tenant for us.
 
