@@ -1,5 +1,5 @@
 Lab 5 - How to work with multiple tenants using AS3
---------------------------------------------------------------------------------------------------
+===================================================
 In this lab, you will work with multiple tenants on a single BIG-IP platform.
 
 **Exercise 1 - Deploy Applications for First Tenant**
@@ -9,7 +9,7 @@ In this lab, you will work with multiple tenants on a single BIG-IP platform.
 #. Open the ``Lab 5`` folder.
 
 #. Click and examine the ``BIG-IP Authenticate`` declaration. Click ``Send`` and ensure a 200 OK response in the Postman response window. 
-    
+
     .. image:: /_static/Postname200OK_Highlighted.JPG
 
 #. Locate the ``Tenant 1: HTTP Multi-Applications (2 Apps)`` request in the same folder.  If you look at the ``Body`` of the request, you will see a declaration to create 2 applications in the tenant named ``http_tenant``.
