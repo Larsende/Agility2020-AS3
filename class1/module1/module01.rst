@@ -80,7 +80,7 @@ In order to complete this lab, you will connect to a Windows jump host, and you 
 
     .. image:: /_static/import.jpg
 
-#. Select ``Import From Link`` and paste the link into the text box, ``https://raw.githubusercontent.com/Larsende/Agility2020-AS3/master/_static/AS3%202020%20Lab%20Final%20Draft.postman_collection_20200127b``, then click ``Import``:
+#. Select ``Import From Link`` and paste the link into the text box, ``https://raw.githubusercontent.com/f5devcentral/f5-agility-labs-automation/AS3-2020/docs/_static/AS3%202020%20Lab.postman_collection.json``, then click ``Import``:
 
     .. image:: /_static/import_from_link.jpg
 
